@@ -1,0 +1,95 @@
+# Aamukatsaus — configuration
+# Everything editable here; no code changes needed for sources/voices/budgets.
+
+timezone: Europe/Helsinki
+target_minutes: 25
+words_per_minute: 155
+
+episode:
+  deep_dives: 4          # 500–650 words each
+  quick_hits: 7          # 150–220 words each
+  research_items: 2      # arXiv/papers, ~250 words each
+
+llm:
+  provider: anthropic     # anthropic | gemini | groq  (env LLM_PROVIDER overrides)
+  model: claude-haiku-4-5 # model for the primary provider
+  max_article_chars: 6000 # truncate extracted text per article before scriptwriting
+  curation_preview_chars: 1500  # chars of text per candidate sent to the curator
+
+tts:
+  engine: edge-tts
+  voice: en-US-AndrewMultilingualNeural
+  fallback_voice: en-US-BrianNeural
+  rate: "+8%"             # measured natural rate ≈140 wpm; +8% ≈ the 155 wpm the word budgets assume
+  bitrate: 64k            # mono MP3
+  segment_gap_ms: 400
+
+retention:
+  releases_keep: 60       # delete older episode releases / feed entries
+  seen_days: 14           # rolling dedupe window
+  issues_close_after_days: 7
+
+fetch:
+  window_hours: 26        # look-back window for new items
+  per_source_cap: 15
+  max_news_candidates: 100   # global cap sent to extraction/curation
+  max_research_candidates: 30
+  hn_min_points: 80
+  # HN items below the points bar still pass if the title contains one of
+  # these as a whole word/phrase (case-insensitive):
+  ai_keywords:
+    [ai, llm, llms, gpt, claude, gemini, openai, anthropic, deepmind, mistral,
+     llama, hugging face, huggingface, copilot, transformer, transformers,
+     neural, language model, language models, machine learning, deep learning,
+     diffusion, chatbot, chatbots, agent, agents, agentic, inference,
+     fine-tuning, fine-tuned, rag, embedding, embeddings, cuda, gpu, gpus,
+     nvidia, tpu]
+
+sources:
+  - name: Hacker News
+    kind: hn
+    url: "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=50"
+  - name: TechCrunch AI
+    kind: rss
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+  - name: The Verge
+    kind: rss
+    url: "https://www.theverge.com/rss/index.xml"
+  - name: Ars Technica
+    kind: rss
+    url: "https://feeds.arstechnica.com/arstechnica/index"
+  - name: VentureBeat AI
+    kind: rss
+    url: "https://venturebeat.com/category/ai/feed/"
+  - name: MIT Technology Review
+    kind: rss
+    url: "https://www.technologyreview.com/feed/"
+  - name: Simon Willison
+    kind: rss
+    url: "https://simonwillison.net/atom/everything/"
+  - name: OpenAI Blog
+    kind: rss
+    url: "https://openai.com/blog/rss.xml"
+  - name: Google DeepMind
+    kind: rss
+    url: "https://deepmind.google/blog/rss.xml"
+  - name: Hugging Face Blog
+    kind: rss
+    url: "https://huggingface.co/blog/feed.xml"
+  # Anthropic has no official RSS feed (anthropic.com/rss.xml is a 404);
+  # their announcements reliably surface via HN / The Verge / TechCrunch.
+  - name: arXiv cs.AI
+    kind: arxiv
+    url: "https://rss.arxiv.org/rss/cs.AI"
+  - name: arXiv cs.LG
+    kind: arxiv
+    url: "https://rss.arxiv.org/rss/cs.LG"
+
+podcast:
+  title: "Aamukatsaus — Daily AI Briefing"
+  author: "Aamukatsaus"
+  description: >-
+    Private, auto-generated 25-minute morning briefing on AI and tech:
+    deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.
+  language: en-us
+  # site_url: ""          # optional override; default https://<owner>.github.io/<repo>

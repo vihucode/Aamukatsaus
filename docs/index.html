@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aamukatsaus — Daily AI Briefing</title>
+<link rel="alternate" type="application/rss+xml" title="Aamukatsaus" href="feed.xml">
+<style>
+  body{font-family:system-ui,sans-serif;max-width:640px;margin:8vh auto;padding:0 1.2em;
+       background:#0d142e;color:#f4ead6;line-height:1.6}
+  a{color:#ffb26b} img{width:180px;border-radius:16px;display:block;margin-bottom:1em}
+  code{background:#1c2447;padding:.15em .4em;border-radius:4px}
+</style>
+</head>
+<body>
+<img src="cover.png" alt="Aamukatsaus cover">
+<h1>Aamukatsaus</h1>
+<p>Private, auto-generated daily AI/tech briefing podcast.</p>
+<p>Subscribe in your podcast app with this URL:<br>
+<code id="feed">feed.xml</code></p>
+<p><a href="feed.xml">RSS feed</a> · <a href="shownotes/">shownotes</a></p>
+<script>document.getElementById('feed').textContent = new URL('feed.xml', location.href).href;</script>
+</body>
+</html>
