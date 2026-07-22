@@ -97,8 +97,8 @@ make test-short                    # ~5 min episode end-to-end
 make all                           # full-length episode
 ```
 
-ffmpeg must be installed (`apt install ffmpeg`; preinstalled on Actions
-runners). Without a GitHub token, `publish`/`feedback` skip the API work and
+ffmpeg must be installed locally (`apt install ffmpeg`; the workflow
+installs it on the runner). Without a GitHub token, `publish`/`feedback` skip the API work and
 still write `docs/` locally. `EPISODE_DATE=YYYY-MM-DD` rebuilds a specific
 date. Stage outputs land in `out/` for inspection.
 
