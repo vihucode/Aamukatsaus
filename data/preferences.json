@@ -1,17 +1,17 @@
 {
   "topics": {
-    "AI agents & orchestration": 1.5,
-    "LLM releases & evals": 1.4,
-    "Microsoft & Copilot ecosystem": 1.3,
-    "dev tooling & developer experience": 1.3,
-    "ML research": 1.2,
-    "open-source AI": 1.2,
-    "chips/GPU & AI infrastructure": 1.1,
+    "AI agents & orchestration": 1.497,
+    "LLM releases & evals": 1.397,
+    "Microsoft & Copilot ecosystem": 1.297,
+    "dev tooling & developer experience": 1.297,
+    "ML research": 1.197,
+    "open-source AI": 1.197,
+    "chips/GPU & AI infrastructure": 1.097,
     "AI policy & regulation": 1.0,
     "security": 1.0,
-    "big tech business": 0.9,
-    "consumer gadgets": 0.6,
-    "crypto": 0.3
+    "big tech business": 0.903,
+    "consumer gadgets": 0.603,
+    "crypto": 0.303
   },
   "boosted_entities": [
     "Anthropic",
