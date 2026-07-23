@@ -18,4 +18,4 @@ Return ONLY the requested segments, each wrapped exactly like:
 …spoken text…
 </segment>
 
-No text outside the tags. Hit each segment's word budget — budgets keep the episode at its target length, so do not come in far under or over. Each segment must stand alone cleanly when stitched together in the given order with a short pause between segments.
+No text outside the tags. Treat each segment's word budget as a hard requirement: reaching at least the lower bound matters, because under-length segments make the whole episode run short. Never pad with fluff to get there — spend the words on analysis, context, numbers and concrete detail from the material. Each segment must stand alone cleanly when stitched together in the given order with a short pause between segments.

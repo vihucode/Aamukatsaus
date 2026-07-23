@@ -120,6 +120,12 @@ cron delay, the episode is in the feed comfortably **before 05:45** year-round
   re-runs are not blocked by `data/seen.json` (only previous days are).
 - **Resilient**: a dead source, failed article extraction, or failed TTS
   segment is logged and skipped; the episode still ships.
+- **Manual daytime runs thin the next episode**: fetched candidates are
+  marked seen immediately, so a manual run in the evening consumes stories
+  (and the day's single arXiv batch — announced ~04:30 UTC, after the
+  nightly run) that the next scheduled episode would otherwise use.
+  Re-running the *same* date is always safe; prefer `test_short` for
+  experiments and accept that the following night may be a little thinner.
 - **Private-ish**: `<itunes:block>Yes</itunes:block>` keeps the feed out of
   podcast directories, and `docs/index.html` is `noindex`. (The feed URL is
   still public if someone has it — it's only news summaries.)

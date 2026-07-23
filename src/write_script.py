@@ -18,12 +18,23 @@ STAGE = "script"
 SEG_RE = re.compile(r"<segment\s+id=[\"']([^\"']+)[\"']\s*>(.*?)</segment>",
                     re.DOTALL | re.IGNORECASE)
 
+# Ask-budgets are deliberately inflated ~15–20% above the spec bands
+# (dd 500–650, qh 150–220, rc ~250): models consistently undershoot, and
+# asking high lands the actual output on target. FLOORS are the real
+# minimums the repair pass enforces; EXPAND_TO is what a repair asks for.
 if TEST_SHORT:
-    BUDGETS = {"intro": "70–100", "dd": "280–380", "qh": "90–130",
-               "rc": "110–160", "outro": "35–50"}
+    BUDGETS = {"intro": "80–110", "dd": "340–440", "qh": "110–150",
+               "rc": "130–180", "outro": "35–50"}
+    FLOORS = {"intro": 50, "dd": 240, "qh": 75, "rc": 95, "outro": 15}
 else:
-    BUDGETS = {"intro": "120–180", "dd": "500–650", "qh": "150–220",
-               "rc": "220–280", "outro": "40–70"}
+    BUDGETS = {"intro": "150–190", "dd": "620–750", "qh": "200–260",
+               "rc": "260–320", "outro": "50–70"}
+    FLOORS = {"intro": 110, "dd": 480, "qh": 150, "rc": 210, "outro": 30}
+EXPAND_TO = {"dd": 700, "qh": 240, "rc": 300}
+
+
+def _seg_kind(sid: str) -> str:
+    return sid.rstrip("0123456789")
 
 
 def sanitize(text: str) -> str:
@@ -136,32 +147,65 @@ def main() -> None:
     low, target, high = word_target()
     log(STAGE, f"draft: {total} words (target {target}, band {low}–{high})")
 
-    if not TEST_SHORT and (total < low - 100 or total > high + 200):
-        # Spec: repair below 3,300 or above 4,600 words.
-        if total < low - 100:
-            fix_ids, goal = qh_ids, "Expand each quick hit to 220–260 words using its material"
-        else:
-            fix_ids, goal = dd_ids, "Condense each deep dive to 430–480 words, keeping the transition and all key facts"
-        fix_ids = [sid for sid in fix_ids if segs.get(sid)]
-        if fix_ids:
-            material = {sid: item for sid, item in
-                        list(zip(qh_ids, quick)) + list(zip(dd_ids, deep))}
+    material = {sid: item for sid, item in
+                list(zip(dd_ids, deep)) + list(zip(qh_ids, quick))
+                + list(zip(rc_ids, research))}
+
+    def _apply(repaired: dict[str, str], ids: list[str]) -> int:
+        for s in segments:
+            if s["id"] in ids and repaired.get(s["id"]):
+                s["text"] = repaired[s["id"]]
+                s["words"] = len(s["text"].split())
+        return sum(s["words"] for s in segments)
+
+    if not TEST_SHORT:
+        # Under-length repair (spec: below 3,300): up to two rounds, expanding
+        # whichever story segments are furthest below their floor — the model
+        # tends to undershoot deep dives most.
+        for round_no in (1, 2):
+            if total >= low - 100:
+                break
+            under = sorted(
+                (s for s in segments
+                 if s["id"] in material and s["words"] < FLOORS[_seg_kind(s["id"])]),
+                key=lambda s: FLOORS[_seg_kind(s["id"])] - s["words"], reverse=True)[:8]
+            if not under:
+                break
+            fix_ids = [s["id"] for s in under]
             repair_user = (
                 f"DATE: {_weekday_date()}\n"
-                f"The episode script is {total} words; it must land between {low} and {high}. "
-                f"{goal}. Rewrite ONLY these segments and return each inside its "
+                f"The episode script totals {total} words but must reach at least {low}. "
+                f"The segments below are under their word budgets. Rewrite ONLY these "
+                f"segments, each expanded to its stated target — add analysis, context "
+                f"and concrete detail from the material, never filler. Keep each "
+                f"segment's opening transition. Return each inside its "
                 f"<segment id=\"...\"> tag:\n\n"
-                + "\n\n".join(f"=== CURRENT {sid.upper()} ===\n{segs[sid]}\n\n"
-                              f"=== MATERIAL {sid.upper()} ===\n{_material(material[sid], 2500)}"
+                + "\n\n".join(
+                    f"=== {s['id'].upper()} — currently {s['words']} words, expand to "
+                    f"about {EXPAND_TO[_seg_kind(s['id'])]} words ===\n{s['text']}\n\n"
+                    f"=== MATERIAL FOR {s['id'].upper()} ===\n"
+                    f"{_material(material[s['id']], 3000)}"
+                    for s in under)
+            )
+            total = _apply(_parse(complete(system, repair_user, max_tokens=8000,
+                                           temperature=0.6)), fix_ids)
+            log(STAGE, f"after expand round {round_no}: {total} words")
+
+        # Over-length repair (spec: above 4,600): condense the deep dives.
+        if total > high + 200:
+            fix_ids = [sid for sid in dd_ids if segs.get(sid)]
+            repair_user = (
+                f"DATE: {_weekday_date()}\n"
+                f"The episode script is {total} words; it must land between {low} and "
+                f"{high}. Condense each deep dive below to 430–480 words, keeping the "
+                f"transition and all key facts. Return each inside its "
+                f"<segment id=\"...\"> tag:\n\n"
+                + "\n\n".join(f"=== CURRENT {sid.upper()} ===\n{segs[sid]}"
                               for sid in fix_ids)
             )
-            repaired = _parse(complete(system, repair_user, max_tokens=8000, temperature=0.6))
-            for s in segments:
-                if s["id"] in fix_ids and repaired.get(s["id"]):
-                    s["text"] = repaired[s["id"]]
-                    s["words"] = len(s["text"].split())
-            total = sum(s["words"] for s in segments)
-            log(STAGE, f"after repair: {total} words")
+            total = _apply(_parse(complete(system, repair_user, max_tokens=8000,
+                                           temperature=0.6)), fix_ids)
+            log(STAGE, f"after condense: {total} words")
 
     est_min = total / CFG["words_per_minute"]
     log(STAGE, f"final script: {total} words ≈ {est_min:.1f} min, "
