@@ -99,17 +99,26 @@ def build_feed(episodes: list[dict]) -> str:
 
 def ensure_release(date: str, mp3_path, notes: str) -> None:
     tag = f"ep-{date}"
-    slug_path = gh.repo_path
-    existing = gh.request("GET", slug_path(f"/releases/tags/{tag}"),
+    existing = gh.request("GET", gh.repo_path(f"/releases/tags/{tag}"),
                           ok=(200, 404)).json()
     if existing.get("id"):
-        log(STAGE, f"release {tag} exists — deleting for clean re-publish")
-        gh.request("DELETE", slug_path(f"/releases/{existing['id']}"), ok=(204, 404))
-        gh.request("DELETE", slug_path(f"/git/refs/tags/{tag}"), ok=(204, 404, 422))
-    rel = gh.request("POST", slug_path("/releases"), json={
-        "tag_name": tag, "name": f"Episode {date}", "body": notes,
-        "draft": False, "prerelease": False,
-    }).json()
+        # Re-publish: keep the release and tag alive — podcast apps hold on
+        # to the resolved asset URL, and deleting the release strands them
+        # with "can't play this episode" until their next feed refresh.
+        # Swapping just the asset shrinks the dead window to ~2 seconds.
+        log(STAGE, f"release {tag} exists — swapping MP3 asset in place")
+        rel = gh.request("PATCH", gh.repo_path(f"/releases/{existing['id']}"),
+                         json={"name": f"Episode {date}", "body": notes}).json()
+        for asset in existing.get("assets") or []:
+            if asset.get("name") == mp3_path.name:
+                gh.request("DELETE",
+                           gh.repo_path(f"/releases/assets/{asset['id']}"),
+                           ok=(204, 404))
+    else:
+        rel = gh.request("POST", gh.repo_path("/releases"), json={
+            "tag_name": tag, "name": f"Episode {date}", "body": notes,
+            "draft": False, "prerelease": False,
+        }).json()
     upload_url = rel["upload_url"].split("{")[0]
     gh.request("POST", f"{upload_url}?name={mp3_path.name}",
                headers=gh.auth_headers({"Content-Type": "audio/mpeg"}),
