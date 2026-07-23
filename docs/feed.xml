@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 20:44:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 02:29:24 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 23 July 2026</title>
+      <description>Deep dives: OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened · Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable · Google justifies its massive AI spending with a booming cloud business · After shocking quarter, IBM insists that AI isn’t killing the mainframe. Plus 7 quick hits.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-07-23.md</link>
+      <guid isPermaLink="false">2026-07-23</guid>
+      <pubDate>Thu, 23 Jul 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-23/2026-07-23.mp3" length="8662356" type="audio/mpeg"/>
+      <itunes:duration>0:17:50</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 22 July 2026</title>
       <description>Deep dives: How OpenAI’s human mistake led to the AI-powered hack on Hugging Face. Plus 3 quick hits and the research corner.</description>
