@@ -26,11 +26,11 @@ DECAY_PER_DAY = 0.003  # ≈ 0.02/week toward 1.0 for topics reactions didn't to
 
 
 def collect_signals(today: dt.date) -> tuple[list[dict], list[dict]]:
-    """Returns (rated stories, open issues past the close-after window)."""
+    """Returns (story comments with reaction counts, issues past close window)."""
     window_start = today - dt.timedelta(days=7)
     close_before = today - dt.timedelta(
         days=CFG["retention"]["issues_close_after_days"])
-    rated, to_close = [], []
+    stories, to_close = [], []
     issues = gh.paginate(gh.repo_path("/issues"),
                          params={"labels": LABEL, "state": "all"}, max_pages=3)
     for issue in issues:
@@ -47,13 +47,29 @@ def collect_signals(today: dt.date) -> tuple[list[dict], list[dict]]:
             if not m:
                 continue
             reactions = c.get("reactions") or {}
-            up, down, heart = (reactions.get("+1", 0), reactions.get("-1", 0),
-                               reactions.get("heart", 0))
-            if up or down or heart:
-                rated.append({"title": m.group(1), "source": m.group(2),
-                              "thumbs_up": up, "thumbs_down": down,
-                              "hearts": heart})
-    return rated, to_close
+            stories.append({"title": m.group(1), "source": m.group(2),
+                            "url": m.group(3), "date": created.isoformat(),
+                            "up": reactions.get("+1", 0),
+                            "down": reactions.get("-1", 0),
+                            "heart": reactions.get("heart", 0)})
+    return stories, to_close
+
+
+def new_reaction_deltas(stories: list[dict], ledger: dict) -> list[dict]:
+    """Each reaction adjusts the profile exactly once: compare current counts
+    to what data/reactions_applied.json already credited and pass only the
+    net-new part to the model. Un-reacting is ignored (no negative deltas)."""
+    rated = []
+    for s in stories:
+        prev = ledger.get(s["url"]) or {}
+        d_up = max(0, s["up"] - prev.get("up", 0))
+        d_down = max(0, s["down"] - prev.get("down", 0))
+        d_heart = max(0, s["heart"] - prev.get("heart", 0))
+        if d_up or d_down or d_heart:
+            rated.append({"title": s["title"], "source": s["source"],
+                          "thumbs_up": d_up, "thumbs_down": d_down,
+                          "hearts": d_heart})
+    return rated
 
 
 def apply_llm_update(prefs: dict, rated: list[dict]) -> dict:
@@ -106,11 +122,24 @@ def main() -> None:
         before_topics = dict(prefs.get("topics") or {})
         today = dt.date.fromisoformat(EPISODE_DATE)
         if gh.have_token(STAGE):
-            rated, to_close = collect_signals(today)
-            log(STAGE, f"{len(rated)} rated stories in window; "
+            stories, to_close = collect_signals(today)
+            ledger = jload(DATA / "reactions_applied.json", {}) or {}
+            rated = new_reaction_deltas(stories, ledger)
+            log(STAGE, f"{len(stories)} story comments in window, "
+                       f"{len(rated)} with new reactions; "
                        f"{len(to_close)} old issues to close")
             if rated:
                 prefs = apply_llm_update(prefs, rated)
+            # Persist credited counts only after a successful update, so a
+            # failed LLM call retries the same signals tomorrow.
+            for s in stories:
+                if s["up"] or s["down"] or s["heart"]:
+                    ledger[s["url"]] = {"up": s["up"], "down": s["down"],
+                                        "heart": s["heart"], "date": s["date"]}
+            prune = (today - dt.timedelta(days=21)).isoformat()
+            ledger = {u: e for u, e in ledger.items()
+                      if (e.get("date") or "9999") >= prune}
+            jdump(ledger, DATA / "reactions_applied.json")
             close_old_issues(to_close)
         prefs = apply_decay(prefs, before_topics)
         prefs["updated"] = EPISODE_DATE

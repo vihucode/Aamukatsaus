@@ -2,10 +2,12 @@ name: daily-episode
 
 on:
   schedule:
-    # 01:30 UTC = 04:30 EEST (summer) / 03:30 EET (winter).
-    # Run < 30 min + typical cron delay keeps the episode live well before
-    # 05:45 Europe/Helsinki in both halves of the year.
+    # 01:30 UTC = 04:30 EEST (summer) / 03:30 EET (winter). GitHub's cron
+    # skips or delays firings on quiet repos, so a second entry retries
+    # 45 min later; src/guard.py turns it into a no-op when the first one
+    # already published the episode.
     - cron: "30 1 * * *"
+    - cron: "15 2 * * *"
   workflow_dispatch:
     inputs:
       test_short:
@@ -44,34 +46,49 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Skip scheduled retry if today's episode already shipped
+        id: guard
+        if: github.event_name == 'schedule'
+        run: python -m src.guard
+
       - name: Install ffmpeg
+        if: steps.guard.outputs.skip != 'true'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg
 
       - name: Update preferences from reactions
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.update_preferences
 
       - name: Fetch candidate stories
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.fetch
 
       - name: Extract full text
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.extract
 
       - name: Curate
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.curate
 
       - name: Write script
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.write_script
 
       - name: Synthesize audio
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.tts
 
       - name: Publish release + feed
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.publish
 
       - name: Create rating issue
+        if: steps.guard.outputs.skip != 'true'
         run: python -m src.feedback
 
       - name: Commit state (data/ + docs/)
+        if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

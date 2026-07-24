@@ -70,8 +70,11 @@ a failed run changes nothing.
   7 days' issues and has the LLM adjust `data/preferences.json`:
   **+0.1** per 👍, **−0.1** per 👎, **+0.25** per ❤️ on matching topic weights
   (clamped to 0–2, 1.0 = neutral); it may also boost/mute entities and update
-  free-text style notes. Untouched topics decay ~0.02/week back toward 1.0.
-  Topics are never deleted. Issues older than 7 days are closed automatically.
+  free-text style notes. Each reaction is credited exactly once —
+  `data/reactions_applied.json` tracks what has already been counted, so late
+  ratings still land without nightly double-counting. Untouched topics decay
+  ~0.02/week back toward 1.0. Topics are never deleted. Issues older than
+  7 days are closed automatically.
 
 ## LLM providers & cost
 
@@ -105,9 +108,12 @@ date. Stage outputs land in `out/` for inspection.
 ## Scheduling / timezone math
 
 Cron `30 1 * * *` UTC = **04:30** Helsinki in summer (EEST, UTC+3) and
-**03:30** in winter (EET, UTC+2). With a < 30 min run and GitHub's typical
-cron delay, the episode is in the feed comfortably **before 05:45** year-round
-— the schedule needs no DST adjustment.
+**03:30** in winter (EET, UTC+2); a < 30 min run leaves ample margin before
+**05:45** year-round, so the schedule needs no DST adjustment. Because
+GitHub's scheduler skips or heavily delays cron firings on quiet repos, a
+second entry (`15 2 * * *`) retries 45 minutes later — `src/guard.py` turns
+it into a no-op whenever the episode already shipped, so the retry costs
+nothing on normal nights.
 
 ## Design notes
 
