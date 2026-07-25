@@ -26,4 +26,4 @@ Return STRICT JSON only — a single object, no markdown, no commentary:
   "skipped_notable": [{"id": 9, "why": "duplicate of #12"}]
 }
 
-Rules: every `id` must be an integer taken from the candidate list; never use the same id twice anywhere; order items by importance (most important first); provide exactly the required counts when the candidates support it.
+Rules: every `id` must be an integer taken from the candidate list; never use the same id twice anywhere; order items by importance (most important first); provide exactly the required counts when the candidates support it. Keep every `reason`, `angle` and `why` to one short sentence. List at most 8 entries in `skipped_notable` — only the genuinely notable ones. Keep the whole response compact so it is never truncated.

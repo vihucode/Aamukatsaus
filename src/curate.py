@@ -10,7 +10,7 @@ import json
 import re
 
 from src.config import CFG, DATA, EPISODE_DATE, OUT, jdump, jload, log, read_prompt
-from src.llm import complete_json
+from src.llm import LLMJSONError, complete_json
 
 STAGE = "curate"
 
@@ -56,6 +56,31 @@ def _valid_picks(raw, items_by_id: dict, kind: str, limit: int, taken: set) -> l
     return picks
 
 
+def _news_score(item: dict) -> float:
+    """Heuristic desirability used only for the no-LLM fallback."""
+    return (2.0 if item.get("full_text") else 0.0) + min(item.get("points") or 0, 400) / 100
+
+
+def _heuristic_select(items: list, ep: dict) -> dict:
+    """Deterministic fallback when the curator LLM can't return usable JSON.
+
+    Ranks news by full-text availability, HN points and recency; research by
+    recency. Keeps the episode shipping instead of dying on one bad response."""
+    news = sorted((i for i in items if i["kind"] == "news"),
+                  key=_news_score, reverse=True)
+    research_items = [i for i in items if i["kind"] == "research"]
+
+    def pack(item: dict) -> dict:
+        return {**item, "angle": "", "reason": "auto-selected (curator fallback)",
+                "one_liner": one_liner(item)}
+
+    deep = [pack(i) for i in news[:ep["deep_dives"]]]
+    quick = [pack(i) for i in news[ep["deep_dives"]:ep["deep_dives"] + ep["quick_hits"]]]
+    research = [pack(i) for i in research_items[:ep["research_items"]]]
+    return {"deep_dives": deep, "quick_hits": quick, "research": research,
+            "skipped_notable": []}
+
+
 def main() -> None:
     data = jload(OUT / "articles.json")
     if not data:
@@ -73,26 +98,47 @@ def main() -> None:
         f"CANDIDATES ({len(items)}):\n\n"
         + "\n\n".join(_preview(i) for i in items)
     )
-    result = complete_json(read_prompt("curator.md"), user,
-                           max_tokens=3000, temperature=0.2)
+    try:
+        result = complete_json(read_prompt("curator.md"), user,
+                               max_tokens=4000, temperature=0.2)
+    except LLMJSONError as e:
+        log(STAGE, f"WARNING: curator LLM returned unusable JSON ({e}); "
+                   f"falling back to heuristic selection")
+        result = None
 
-    taken: set = set()
-    deep = _valid_picks(result.get("deep_dives"), items_by_id, "news",
-                        ep["deep_dives"], taken)
-    quick = _valid_picks(result.get("quick_hits"), items_by_id, "news",
-                         ep["quick_hits"], taken)
-    research = _valid_picks(result.get("research"), items_by_id, "research",
-                            ep["research_items"], taken)
-    skipped = []
-    for entry in result.get("skipped_notable") or []:
-        item = items_by_id.get(entry.get("id")) if isinstance(entry, dict) else None
-        if item:
-            skipped.append({"id": item["id"], "title": item["title"],
-                            "why": str(entry.get("why") or "")[:300]})
+    if result is not None:
+        taken: set = set()
+        deep = _valid_picks(result.get("deep_dives"), items_by_id, "news",
+                            ep["deep_dives"], taken)
+        quick = _valid_picks(result.get("quick_hits"), items_by_id, "news",
+                             ep["quick_hits"], taken)
+        research = _valid_picks(result.get("research"), items_by_id, "research",
+                                ep["research_items"], taken)
+        skipped = []
+        for entry in result.get("skipped_notable") or []:
+            item = items_by_id.get(entry.get("id")) if isinstance(entry, dict) else None
+            if item:
+                skipped.append({"id": item["id"], "title": item["title"],
+                                "why": str(entry.get("why") or "")[:300]})
+    else:
+        deep, quick, research, skipped = [], [], [], []
+
+    # Whether the LLM was skipped or returned too few usable picks, top up
+    # from the heuristic so the episode always has enough material.
+    if not deep or (len(deep) + len(quick) + len(research)) < 3:
+        fb = _heuristic_select(items, ep)
+        chosen = {i["id"] for i in deep + quick + research}
+        deep = deep or [i for i in fb["deep_dives"] if i["id"] not in chosen][:ep["deep_dives"]]
+        chosen = {i["id"] for i in deep + quick + research}
+        quick = quick or [i for i in fb["quick_hits"] if i["id"] not in chosen][:ep["quick_hits"]]
+        chosen = {i["id"] for i in deep + quick + research}
+        research = research or [i for i in fb["research"] if i["id"] not in chosen][:ep["research_items"]]
+        log(STAGE, "applied heuristic fallback to reach a shippable episode")
 
     if not deep or (len(deep) + len(quick) + len(research)) < 3:
-        raise SystemExit(f"[{STAGE}] curation too thin: {len(deep)} deep dives, "
-                         f"{len(quick)} quick hits, {len(research)} research")
+        raise SystemExit(f"[{STAGE}] curation too thin even after fallback: "
+                         f"{len(deep)} deep dives, {len(quick)} quick hits, "
+                         f"{len(research)} research")
     if len(deep) < ep["deep_dives"] or len(quick) < ep["quick_hits"]:
         log(STAGE, f"NOTE: model returned fewer picks than configured "
                    f"(dd {len(deep)}/{ep['deep_dives']}, qh {len(quick)}/{ep['quick_hits']}) "

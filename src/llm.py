@@ -150,6 +150,52 @@ def complete(system: str, user: str, max_tokens: int = 4000,
     raise RuntimeError("All LLM providers failed: " + " | ".join(errors))
 
 
+class LLMJSONError(ValueError):
+    """Raised when a model response can't be coerced into JSON even after
+    repair and salvage. Callers should catch this and fall back rather than
+    let one malformed response kill the run."""
+
+
+def _salvage_json(text: str) -> dict:
+    """Best-effort recovery of a JSON object truncated at max_tokens.
+
+    Scans the top-level object and cuts after the last fully-closed member
+    value, then closes the object. A response cut off mid-array still yields
+    every top-level key that completed (e.g. deep_dives survives even if
+    skipped_notable was truncated)."""
+    start = text.find("{")
+    if start == -1:
+        raise LLMJSONError("no JSON object found")
+    s = text[start:]
+    depth = 0
+    in_str = esc = False
+    safe = None  # index just past the last depth-1 member value that closed
+    for i, ch in enumerate(s):
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch in "{[":
+            depth += 1
+        elif ch in "}]":
+            depth -= 1
+            if depth == 1:
+                safe = i + 1
+            elif depth == 0:
+                # the object closed on its own — nothing to salvage past here
+                return json.loads(s[: i + 1])
+    if safe is None:
+        raise LLMJSONError("could not salvage truncated JSON")
+    candidate = s[:safe].rstrip().rstrip(",") + "}"
+    return json.loads(candidate)
+
+
 def extract_json(text: str) -> dict:
     """Parse a JSON object out of model text, tolerating fences and prose."""
     text = text.strip()
@@ -172,9 +218,29 @@ def complete_json(system: str, user: str, max_tokens: int = 4000,
     try:
         return extract_json(text)
     except json.JSONDecodeError:
-        log(STAGE, "invalid JSON from model; asking it to repair")
+        pass
+
+    # Salvage a truncated-but-mostly-valid object before spending another call.
+    try:
+        salvaged = _salvage_json(text)
+        log(STAGE, "recovered truncated JSON via salvage")
+        return salvaged
+    except (json.JSONDecodeError, LLMJSONError):
+        pass
+
+    log(STAGE, "invalid JSON from model; asking it to repair")
+    try:
         fixed = complete(
             "You fix malformed JSON. Return only the corrected JSON object, nothing else.",
             f"Fix this so it parses as strict JSON:\n\n{text[:20000]}",
             max_tokens=max_tokens, json_mode=True, temperature=0.0)
-        return extract_json(fixed)
+    except Exception as e:  # noqa: BLE001 — repair call itself may fail
+        raise LLMJSONError(f"repair call failed: {e}") from e
+    for parse in (extract_json, _salvage_json):
+        try:
+            result = parse(fixed)
+            log(STAGE, f"repaired JSON parsed via {parse.__name__}")
+            return result
+        except (json.JSONDecodeError, LLMJSONError):
+            continue
+    raise LLMJSONError("model JSON unparseable after repair and salvage")
