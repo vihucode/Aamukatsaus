@@ -1,11 +1,17 @@
 name: daily-episode
 
 on:
+  # PRIMARY trigger: an external scheduler commits a timestamp to
+  # .github/trigger at 01:35 UTC. GitHub's own cron proved unreliable on this
+  # repo — it skips firings entirely or runs ~3 h late, well past the 05:45
+  # Europe/Helsinki deadline — so the push is what actually ships the episode.
+  push:
+    paths:
+      - ".github/trigger"
   schedule:
-    # 01:30 UTC = 04:30 EEST (summer) / 03:30 EET (winter). GitHub's cron
-    # skips or delays firings on quiet repos, so a second entry retries
-    # 45 min later; src/guard.py turns it into a no-op when the first one
-    # already published the episode.
+    # Backup only, kept because it costs nothing: 01:30 UTC = 04:30 EEST /
+    # 03:30 EET, with a retry 45 min later. Whenever these do fire,
+    # src/guard.py no-ops them if the episode is already published.
     - cron: "30 1 * * *"
     - cron: "15 2 * * *"
   workflow_dispatch:
@@ -46,9 +52,12 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Skip scheduled retry if today's episode already shipped
+      # Guards every automatic trigger (push + schedule) so a redundant
+      # firing costs nothing. Only an explicit workflow_dispatch bypasses it,
+      # which is what makes a deliberate same-day rebuild always work.
+      - name: Skip if today's episode already shipped
         id: guard
-        if: github.event_name == 'schedule'
+        if: github.event_name != 'workflow_dispatch'
         run: python -m src.guard
 
       - name: Install ffmpeg

@@ -107,13 +107,26 @@ date. Stage outputs land in `out/` for inspection.
 
 ## Scheduling / timezone math
 
-Cron `30 1 * * *` UTC = **04:30** Helsinki in summer (EEST, UTC+3) and
-**03:30** in winter (EET, UTC+2); a < 30 min run leaves ample margin before
-**05:45** year-round, so the schedule needs no DST adjustment. Because
-GitHub's scheduler skips or heavily delays cron firings on quiet repos, a
-second entry (`15 2 * * *`) retries 45 minutes later — `src/guard.py` turns
-it into a no-op whenever the episode already shipped, so the retry costs
-nothing on normal nights.
+**GitHub's cron is not reliable enough to be the primary trigger.** Measured
+on this repo: it skipped some nights entirely and fired ~3 h late on others
+(01:30 → ~04:45 UTC), which is past the 05:45 Helsinki deadline. Adding more
+cron entries doesn't help — they all get deprioritized into the same window.
+
+So the episode is triggered three ways, in order of reliability:
+
+1. **Push to `.github/trigger` (primary).** An external scheduler — a Claude
+   Routine — commits a timestamp there at **01:35 UTC**, and `on: push` fires
+   the build immediately. Episode is live ~01:50 UTC = **04:50** Helsinki in
+   summer, 03:50 in winter. It checks `docs/episodes.json` first and skips the
+   push entirely if the day's episode already exists.
+2. **`schedule` (backup).** Crons `30 1 * * *` and `15 2 * * *` are kept
+   because they cost nothing on the nights they do fire.
+3. **`workflow_dispatch` (manual).** Actions → *Run workflow*.
+
+`src/guard.py` runs as a pre-flight on **every automatic trigger** (push and
+schedule) and no-ops the run when the day's episode is already published, so
+redundant firings are free. Only an explicit `workflow_dispatch` bypasses the
+guard — that is what makes a deliberate same-day rebuild always work.
 
 ## Design notes
 

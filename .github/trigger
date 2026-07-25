@@ -1,0 +1,12 @@
+# Episode dispatch trigger.
+#
+# Committing to this file fires .github/workflows/daily.yml (on: push).
+# The nightly Routine appends a timestamp here at 01:35 UTC — that push is
+# the primary, reliable trigger, because GitHub's own cron skips or delays
+# firings on this repo by hours.
+#
+# Nothing reads the contents; only the commit matters. src/guard.py still
+# no-ops the run if the day's episode is already published, so an extra
+# push is harmless.
+
+dispatched:
