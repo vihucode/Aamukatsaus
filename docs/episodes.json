@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-07-29",
+    "title": "AI Briefing — 29 July 2026",
+    "description": "Deep dives: We now have a better understanding how OpenAI hacked into Hugging Face · Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents · Discovering cryptographic weaknesses with Claude · Scientific computing in the age of agentic AI. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-29/2026-07-29.mp3",
+    "bytes": 11360679,
+    "seconds": 1407
+  },
+  {
     "date": "2026-07-28",
     "title": "AI Briefing — 28 July 2026",
     "description": "Deep dives: OpenAI called the Hugging Face attack unprecedented. But we’ve been here before. · Our position on open-weights models · Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system · An opinionated guide to which AI to use to do stuff. Plus 7 quick hits and the research corner.",
