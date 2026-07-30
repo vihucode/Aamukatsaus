@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-07-30",
+    "title": "AI Briefing — 30 July 2026",
+    "description": "Deep dives: Microsoft is openly competing with OpenAI, Anthropic more than ever · Microsoft confirms Copilot ‘super app’ coming this year · Anthropic is finding bugs faster than Microsoft can fix them · The Hugging Face AI break-in explained. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-30/2026-07-30.mp3",
+    "bytes": 11267172,
+    "seconds": 1395
+  },
+  {
     "date": "2026-07-29",
     "title": "AI Briefing — 29 July 2026",
     "description": "Deep dives: We now have a better understanding how OpenAI hacked into Hugging Face · Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents · Discovering cryptographic weaknesses with Claude · Scientific computing in the age of agentic AI. Plus 7 quick hits and the research corner.",
