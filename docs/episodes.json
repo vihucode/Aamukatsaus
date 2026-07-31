@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-07-31",
+    "title": "AI Briefing — 31 July 2026",
+    "description": "Deep dives: Anthropic says its own AI models breached three companies during security tests · We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447 · Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI · New MCP specification addresses the main barrier to enterprise adoption. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-31/2026-07-31.mp3",
+    "bytes": 12130075,
+    "seconds": 1503
+  },
+  {
     "date": "2026-07-30",
     "title": "AI Briefing — 30 July 2026",
     "description": "Deep dives: Microsoft is openly competing with OpenAI, Anthropic more than ever · Microsoft confirms Copilot ‘super app’ coming this year · Anthropic is finding bugs faster than Microsoft can fix them · The Hugging Face AI break-in explained. Plus 7 quick hits and the research corner.",
