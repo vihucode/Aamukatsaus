@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 05:07:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 04:58:19 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 1 August 2026</title>
+      <description>Deep dives: Claude published malicious code to the Internet and attacked 3 real companies · Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp) · deepseek-ai/DeepSeek-V4-Flash-0731 · Tailscale didn't stop the Hugging Face intrusion. Plus 7 quick hits.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-01.md</link>
+      <guid isPermaLink="false">2026-08-01</guid>
+      <pubDate>Sat, 01 Aug 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-01/2026-08-01.mp3" length="11416325" type="audio/mpeg"/>
+      <itunes:duration>0:23:34</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 31 July 2026</title>
       <description>Deep dives: Anthropic says its own AI models breached three companies during security tests · We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447 · Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI · New MCP specification addresses the main barrier to enterprise adoption. Plus 7 quick hits and the research corner.</description>

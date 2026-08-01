@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-01",
+    "title": "AI Briefing — 1 August 2026",
+    "description": "Deep dives: Claude published malicious code to the Internet and attacked 3 real companies · Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp) · deepseek-ai/DeepSeek-V4-Flash-0731 · Tailscale didn't stop the Hugging Face intrusion. Plus 7 quick hits.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-01/2026-08-01.mp3",
+    "bytes": 11416325,
+    "seconds": 1414
+  },
+  {
     "date": "2026-07-31",
     "title": "AI Briefing — 31 July 2026",
     "description": "Deep dives: Anthropic says its own AI models breached three companies during security tests · We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447 · Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI · New MCP specification addresses the main barrier to enterprise adoption. Plus 7 quick hits and the research corner.",
