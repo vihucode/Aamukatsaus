@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-04",
+    "title": "AI Briefing — 4 August 2026",
+    "description": "Deep dives: Quoting Steve Yegge · Ten advances in mathematics and theoretical computer science · How we built a realtime system for responsive voice AI in six months · An AI-supervised remote exam went so badly that 58,000 students must retake it. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-04/2026-08-04.mp3",
+    "bytes": 12789439,
+    "seconds": 1585
+  },
+  {
     "date": "2026-08-03",
     "title": "AI Briefing — 3 August 2026",
     "description": "Deep dives: OpenAI's super PAC is funding AI-generated news site attacking industry critics · AI migrated legacy COBOL programs to Java, bugs included · Karpathy’s Pelican · Show HN: Mu – Tools for Agents. Plus 7 quick hits and the research corner.",
