@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-06",
+    "title": "AI Briefing — 6 August 2026",
+    "description": "Deep dives: Incident Report: unsanctioned agent behaviour during cyber testing · Thousands of servers can be backdoored by exploiting buggy motherboard controllers · Jeff Dean and other top AI researchers are leaving Google to launch their own startup · Anthropic is hiring an AI chip design team. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-06/2026-08-06.mp3",
+    "bytes": 11985736,
+    "seconds": 1485
+  },
+  {
     "date": "2026-08-05",
     "title": "AI Briefing — 5 August 2026",
     "description": "Deep dives: New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging · Open-weight AI models are catching up to the frontier. The safety gap remains. · Third-party cyber evaluations involving OpenAI models · Mistral's Shieldstral: 3B open-weights model for multimodal moderation. Plus 7 quick hits and the research corner.",
