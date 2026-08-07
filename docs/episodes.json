@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-07",
+    "title": "AI Briefing — 7 August 2026",
+    "description": "Deep dives: Anthropic will design its own hardware to power Claude · ChatGPT brings unlimited text chats to free users · WeatherNext: AI model achieves breakthrough in forecasting cyclones · Humans missed 1 in 3 threats approving AI agent commands across 40k game runs. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-07/2026-08-07.mp3",
+    "bytes": 10655297,
+    "seconds": 1319
+  },
+  {
     "date": "2026-08-06",
     "title": "AI Briefing — 6 August 2026",
     "description": "Deep dives: Incident Report: unsanctioned agent behaviour during cyber testing · Thousands of servers can be backdoored by exploiting buggy motherboard controllers · Jeff Dean and other top AI researchers are leaving Google to launch their own startup · Anthropic is hiring an AI chip design team. Plus 7 quick hits and the research corner.",
