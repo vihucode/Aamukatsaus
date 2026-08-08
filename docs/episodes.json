@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-08",
+    "title": "AI Briefing — 8 August 2026",
+    "description": "Deep dives: Now we have a timeline of the OpenAI accidental attack against Hugging Face · OpenAI says it slowed Astra model development over security concerns · After Rippling blew millions on AI in months, it built an employee ROI tool · Cloudflare launches Kitesurf, a browser built for AI agents. Plus 7 quick hits.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-08/2026-08-08.mp3",
+    "bytes": 11039158,
+    "seconds": 1366
+  },
+  {
     "date": "2026-08-07",
     "title": "AI Briefing — 7 August 2026",
     "description": "Deep dives: Anthropic will design its own hardware to power Claude · ChatGPT brings unlimited text chats to free users · WeatherNext: AI model achieves breakthrough in forecasting cyclones · Humans missed 1 in 3 threats approving AI agent commands across 40k game runs. Plus 7 quick hits and the research corner.",
