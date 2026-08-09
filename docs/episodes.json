@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-09",
+    "title": "AI Briefing — 9 August 2026",
+    "description": "Deep dives: Auto mode is now the default in Claude Code for Pro, Max, and Team plans · Planned Amazon data center could become the biggest climate polluter in the U.S. · Now we have a timeline of the OpenAI accidental attack against Hugging Face · Can Intel finally beat ARM on performance per Watt?. Plus 7 quick hits.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-09/2026-08-09.mp3",
+    "bytes": 10712405,
+    "seconds": 1326
+  },
+  {
     "date": "2026-08-08",
     "title": "AI Briefing — 8 August 2026",
     "description": "Deep dives: Now we have a timeline of the OpenAI accidental attack against Hugging Face · OpenAI says it slowed Astra model development over security concerns · After Rippling blew millions on AI in months, it built an employee ROI tool · Cloudflare launches Kitesurf, a browser built for AI agents. Plus 7 quick hits.",
