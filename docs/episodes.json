@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-11",
+    "title": "AI Briefing — 11 August 2026",
+    "description": "Deep dives: As AI-led attacks multiply, OpenAI launches a new cyber model · Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows · Discovered Materials is playing AI whack-a-mole to hunt cooler chips · A researcher bought noreply.net. Companies started sending him secrets.. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-11/2026-08-11.mp3",
+    "bytes": 11668398,
+    "seconds": 1445
+  },
+  {
     "date": "2026-08-10",
     "title": "AI Briefing — 10 August 2026",
     "description": "Deep dives: The AI safety test is becoming a safety risk · Anthropic is turning Claude Code’s auto mode on by default · OpenChamber: An Agentic Development Environment · Quoting Claude Opus 5 system prompt. Plus 7 quick hits.",
