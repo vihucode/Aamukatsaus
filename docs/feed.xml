@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 03:49:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 03:46:02 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 14 August 2026</title>
+      <description>Deep dives: Anthropic set AI agents loose on the same task. They started a turf war. · Introducing Gemini 3.7 Flash · Anthropic could be worth $2 trillion when it goes public · Private security firms will soon be allowed to hack overseas cybercriminals. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-14.md</link>
+      <guid isPermaLink="false">2026-08-14</guid>
+      <pubDate>Fri, 14 Aug 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-14/2026-08-14.mp3" length="13157402" type="audio/mpeg"/>
+      <itunes:duration>0:27:11</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 13 August 2026</title>
       <description>Deep dives: Terabytes of credentials leaked in massive supply-chain attack · DeepSeek V4 Pro 0813 (on OpenRouter) · Delta · From assistance to execution: How enterprises put AI to work. Plus 7 quick hits and the research corner.</description>
