@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-15",
+    "title": "AI Briefing — 15 August 2026",
+    "description": "Deep dives: Why does Opus 5 feel worse to work with? · Vulnerability giving attackers full control of Macs is under active exploitation · Google is making private AI practical with homomorphic encryption · OpenAI and Anthropic in price war as Chinese AI rivals gain ground. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-15/2026-08-15.mp3",
+    "bytes": 10543173,
+    "seconds": 1304
+  },
+  {
     "date": "2026-08-14",
     "title": "AI Briefing — 14 August 2026",
     "description": "Deep dives: Anthropic set AI agents loose on the same task. They started a turf war. · Introducing Gemini 3.7 Flash · Anthropic could be worth $2 trillion when it goes public · Private security firms will soon be allowed to hack overseas cybercriminals. Plus 7 quick hits and the research corner.",
