@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-17",
+    "title": "AI Briefing — 17 August 2026",
+    "description": "Deep dives: OpenAI reportedly disbanded its preparedness team · Models Are Getting Dumber on Purpose · Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+ · The AI Credit Resale Economy. Plus 7 quick hits.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-17/2026-08-17.mp3",
+    "bytes": 13222251,
+    "seconds": 1639
+  },
+  {
     "date": "2026-08-16",
     "title": "AI Briefing — 16 August 2026",
     "description": "Deep dives: Anthropic shares more details about how Claude’s new watermarks will work · SpaceX officially closes its Cursor acquisition · AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code · AI has access to a vastly larger working memory than the human brain. Plus 7 quick hits and the research corner.",
