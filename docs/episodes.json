@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-19",
+    "title": "AI Briefing — 19 August 2026",
+    "description": "Deep dives: OpenAI lays out new security changes after its AI hacked Hugging Face · Cursor capitalizes on GitHub frustration, launches rival hosting platform · How Much Memory Does Your Agent Actually Need? · Microsoft Copilot reveals secret input that allowed it to be hacked. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-19/2026-08-19.mp3",
+    "bytes": 11335789,
+    "seconds": 1403
+  },
+  {
     "date": "2026-08-18",
     "title": "AI Briefing — 18 August 2026",
     "description": "Deep dives: Anthropic’s annualized revenue surges to $65B · AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira · Hidden Airtag reveals Amazon is trashing rare books to train AI · The Defender’s Window. Plus 7 quick hits and the research corner.",
