@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2026 02:51:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 02:44:34 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 20 August 2026</title>
+      <description>Deep dives: Stripe didn’t really buy OpenRouter because of the ‘singularity’ · Offering Zero Data Retention for frontier models · OpenAI hit the brakes. Now what? · Ornith-1.5: From Self-Scaffolding to Self-Improvement. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-20.md</link>
+      <guid isPermaLink="false">2026-08-20</guid>
+      <pubDate>Thu, 20 Aug 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-20/2026-08-20.mp3" length="12206431" type="audio/mpeg"/>
+      <itunes:duration>0:25:12</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 19 August 2026</title>
       <description>Deep dives: OpenAI lays out new security changes after its AI hacked Hugging Face · Cursor capitalizes on GitHub frustration, launches rival hosting platform · How Much Memory Does Your Agent Actually Need? · Microsoft Copilot reveals secret input that allowed it to be hacked. Plus 7 quick hits and the research corner.</description>
