@@ -1,17 +1,17 @@
 {
   "topics": {
-    "AI agents & orchestration": 1.416,
-    "LLM releases & evals": 1.316,
-    "Microsoft & Copilot ecosystem": 1.216,
-    "dev tooling & developer experience": 1.216,
-    "ML research": 1.116,
-    "open-source AI": 1.269,
-    "chips/GPU & AI infrastructure": 1.119,
-    "AI policy & regulation": 1.019,
-    "security": 1.269,
-    "big tech business": 1.019,
-    "consumer gadgets": 0.684,
-    "crypto": 0.384
+    "AI agents & orchestration": 1.413,
+    "LLM releases & evals": 1.313,
+    "Microsoft & Copilot ecosystem": 1.213,
+    "dev tooling & developer experience": 1.213,
+    "ML research": 1.113,
+    "open-source AI": 1.266,
+    "chips/GPU & AI infrastructure": 1.116,
+    "AI policy & regulation": 1.016,
+    "security": 1.266,
+    "big tech business": 1.016,
+    "consumer gadgets": 0.687,
+    "crypto": 0.387
   },
   "boosted_entities": [
     "Anthropic",
@@ -19,5 +19,5 @@
   ],
   "muted_entities": [],
   "style_notes": "Prefers technical depth over business fluff. Strong interest in security incidents and infrastructure investments.",
-  "updated": "2026-08-20"
+  "updated": "2026-08-21"
 }
