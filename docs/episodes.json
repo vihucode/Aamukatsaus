@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-22",
+    "title": "AI Briefing — 22 August 2026",
+    "description": "Deep dives: Nvidia just showed that the harness, not the AI model, is now the real hero · Anthropic’s Opus 4.6 is a smut-machine · I accidentally logged hundreds of thousands of phone calls to military bases · Nvidia partners with data center developer Cloverleaf. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-22/2026-08-22.mp3",
+    "bytes": 13150918,
+    "seconds": 1630
+  },
+  {
     "date": "2026-08-21",
     "title": "AI Briefing — 21 August 2026",
     "description": "Deep dives: Malicious Rust crate Arrayref runs a build-time payload · OpenAI is gaining on Anthropic with business users, new data indicates · The August 17 outage, and the work ahead · Grok exfiltrates user data when malicious instructions are encrypted. Plus 7 quick hits and the research corner.",
