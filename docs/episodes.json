@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-24",
+    "title": "AI Briefing — 24 August 2026",
+    "description": "Deep dives: Anthropic’s best AI model struggles to attract users as cheaper tools thrive · Malware infects Android-based automotive head unit firmware · I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes · Is it legal to train AI models on copyrighted books? It’s complicated. Plus 7 quick hits.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-24/2026-08-24.mp3",
+    "bytes": 11045225,
+    "seconds": 1367
+  },
+  {
     "date": "2026-08-23",
     "title": "AI Briefing — 23 August 2026",
     "description": "Deep dives: Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research · Frontier AI labs still won’t say how they’d contain a rogue model · OpenAI says California should strengthen its AI safety bill · Munder Difflin – Agent harness to run an office of your clones. Plus 7 quick hits.",
