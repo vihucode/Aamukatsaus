@@ -1,12 +1,14 @@
-"""Pre-flight for scheduled runs: skip the pipeline when today's episode
-already shipped.
+"""Pre-flight for automatic runs. Turns the whole run into a no-op when
+either (a) tonight is not an episode night per `schedule:` in config.yaml,
+or (b) today's episode already shipped.
 
-The workflow carries two cron entries because GitHub's scheduler skips or
-delays firings on quiet repos. Whichever fires first builds the episode;
-the other lands here, sees the published release, and turns the whole run
-into a no-op so no duplicate LLM/TTS cost is incurred. Manual dispatches
-never run this guard (the workflow gates it to schedule events) so a
-forced rebuild always goes through.
+(b) exists because several triggers can fire for the same date — the
+nightly push plus GitHub's own crons — and only the first should spend
+LLM/TTS budget. (a) is how the owner chooses which nights the podcast
+rolls at all.
+
+Manual workflow_dispatch runs never reach this guard (the workflow gates
+it on the event type), so a deliberate rebuild always goes through.
 """
 from __future__ import annotations
 
@@ -14,21 +16,29 @@ import os
 
 from src import gh
 from src.config import EPISODE_DATE, log
+from src.schedule import should_build
 
 STAGE = "guard"
 
 
 def main() -> None:
-    skip = False
-    if gh.have_token(STAGE):
+    skip, reason = False, ""
+
+    build_tonight, why = should_build()
+    if not build_tonight:
+        skip, reason = True, why
+
+    if not skip and gh.have_token(STAGE):
         rel = gh.request("GET", gh.repo_path(f"/releases/tags/ep-{EPISODE_DATE}"),
                          ok=(200, 404)).json()
         has_asset = any(a.get("name") == f"{EPISODE_DATE}.mp3"
                         for a in rel.get("assets") or [])
         published_today = (rel.get("published_at") or "") >= f"{EPISODE_DATE}T00:00:00"
-        skip = bool(rel.get("id")) and has_asset and published_today
-    log(STAGE, f"episode {EPISODE_DATE} already published — skipping this run"
-        if skip else f"no published episode for {EPISODE_DATE} yet — proceeding")
+        if bool(rel.get("id")) and has_asset and published_today:
+            skip, reason = True, "episode is already published"
+
+    log(STAGE, f"skipping {EPISODE_DATE}: {reason}" if skip
+        else f"building {EPISODE_DATE}: {why}")
     out = os.environ.get("GITHUB_OUTPUT")
     if out:
         with open(out, "a", encoding="utf-8") as f:

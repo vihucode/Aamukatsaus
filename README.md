@@ -1,10 +1,11 @@
 # Aamukatsaus — Autonomous Daily AI/Tech News Podcast
 
-Every night this repo collects the most important AI/tech news and research,
-writes a 20–30 minute spoken briefing, converts it to audio, and publishes it
-to a **private podcast RSS feed** your phone auto-downloads before **06:00
-Europe/Helsinki**. During the day you rate stories with emoji reactions in the
-GitHub mobile app, and the system learns your preferences for the next run.
+On the nights you choose (weekday nights by default) this repo collects the
+most important AI/tech news and research, writes a 20–30 minute spoken
+briefing, converts it to audio, and publishes it to a **private podcast RSS
+feed** your phone auto-downloads before **06:00 Europe/Helsinki**. During the
+day you rate stories with emoji reactions in the GitHub mobile app, and the
+system learns your preferences for the next run.
 
 Runs entirely on **GitHub Actions + GitHub Pages + GitHub Releases** — no
 servers. The only paid component is the LLM API (≈ $3–4/month on Claude
@@ -13,10 +14,11 @@ Haiku; free-tier Gemini/Groq fallbacks give a $0 build).
 ## How it works
 
 ```
-GitHub Actions (cron 01:30 UTC daily)
+GitHub Actions (triggered 01:35 UTC on your chosen nights)
 │
+├── 0. guard               ← is tonight an episode night? already published?
 ├── 1. update_preferences  ← reads 👍/👎/❤️ reactions from last 7 days' issues
-├── 2. fetch               ← RSS/APIs, last 26 h, dedupe vs data/seen.json
+├── 2. fetch               ← RSS/APIs, last 26 h (wider after skipped nights)
 ├── 3. extract             ← full-text extraction (trafilatura)
 ├── 4. curate              ← LLM: score & select stories using preferences
 ├── 5. write_script        ← LLM: 3,400–4,400-word spoken briefing
@@ -44,7 +46,8 @@ a failed run changes nothing.
    branch `master`, folder `/docs`.
 4. **First episode**: Actions → `daily-episode` → *Run workflow* (tick
    `test_short` for a ~5-minute smoke-test episode first if you like).
-   After that it runs itself every night at 01:30 UTC.
+   After that it runs itself on the nights set in `config.yaml` — see
+   *Choosing which nights it runs* below.
 
 ### Phone setup
 
@@ -60,6 +63,43 @@ a failed run changes nothing.
    the daily *"Episode … — rate stories"* issue is one tap away. Rate with a
    reaction on each story's comment: **👍 more like this · 👎 less ·
    ❤️ much more**.
+
+## Choosing which nights it runs
+
+By default an episode is built **Monday–Friday nights**, so you wake up to one
+on weekday mornings and the podcast stays quiet at the weekend. Everything is
+in the `schedule:` block at the top of `config.yaml`:
+
+```yaml
+schedule:
+  days: [mon, tue, wed, thu, fri]   # mornings you want an episode
+  skip_dates: []                    # one-off days off: ["2026-08-03"]
+  paused: false                     # true = stop all automatic builds
+```
+
+`days` takes weekday names or a shorthand — `[all]`, `[weekdays]`,
+`[weekends]` — and the name is **the morning the episode appears**. Some
+examples:
+
+| You want | `days:` |
+|---|---|
+| Every morning | `[all]` |
+| Weekday mornings only (default) | `[weekdays]` |
+| Three times a week | `[mon, wed, fri]` |
+| Just Monday, for the week ahead | `[mon]` |
+
+**Editing it:** open `config.yaml` on github.com or in the GitHub mobile app,
+change the line, commit. It takes effect that same night — no deploy, no code
+change. Going on holiday? Set `paused: true`, or list the dates in
+`skip_dates`. Want one extra episode anyway? Actions → *Run workflow* always
+builds, whatever the schedule says.
+
+**Skipped nights don't lose news.** The next episode automatically widens its
+look-back window to reach back to the previous episode, so Monday's briefing
+still carries Saturday and Sunday. That stretch is capped by
+`fetch.catch_up_max_hours` (80 h ≈ 3 days) so a long pause can't pull in a
+month of stories at once. Check tonight's decision any time with
+`make schedule`.
 
 ## The feedback loop
 
@@ -117,16 +157,18 @@ So the episode is triggered three ways, in order of reliability:
 1. **Push to `.github/trigger` (primary).** An external scheduler — a Claude
    Routine — commits a timestamp there at **01:35 UTC**, and `on: push` fires
    the build immediately. Episode is live ~01:50 UTC = **04:50** Helsinki in
-   summer, 03:50 in winter. It checks `docs/episodes.json` first and skips the
-   push entirely if the day's episode already exists.
+   summer, 03:50 in winter. Before pushing it checks two things and stays put
+   if either says no: is tonight an episode night (see *Choosing which nights
+   it runs*), and does the day's episode already exist.
 2. **`schedule` (backup).** Crons `30 1 * * *` and `15 2 * * *` are kept
    because they cost nothing on the nights they do fire.
 3. **`workflow_dispatch` (manual).** Actions → *Run workflow*.
 
 `src/guard.py` runs as a pre-flight on **every automatic trigger** (push and
-schedule) and no-ops the run when the day's episode is already published, so
-redundant firings are free. Only an explicit `workflow_dispatch` bypasses the
-guard — that is what makes a deliberate same-day rebuild always work.
+schedule) and no-ops the run when tonight isn't an episode night, or when the
+day's episode is already published — so redundant firings are free. Only an
+explicit `workflow_dispatch` bypasses the guard, which is what makes both a
+deliberate same-day rebuild and an off-schedule extra episode always work.
 
 ## Design notes
 
@@ -156,6 +198,8 @@ guard — that is what makes a deliberate same-day rebuild always work.
 ```
 .github/workflows/daily.yml   nightly pipeline
 src/                          pipeline stages (see architecture above)
+src/schedule.py               which nights an episode is built
+.github/trigger               commit here to start a build
 prompts/                      curator / scriptwriter / preference-updater prompts
 config.yaml                   sources, budgets, voices, retention
 data/preferences.json         learned preference profile (committed)

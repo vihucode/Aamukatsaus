@@ -17,7 +17,7 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 import feedparser
 import requests
 
-from src.config import CFG, DATA, EPISODE_DATE, OUT, jdump, jload, log
+from src.config import CFG, DATA, DOCS, EPISODE_DATE, OUT, jdump, jload, log
 
 STAGE = "fetch"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AamukatsausBot/1.0"
@@ -139,10 +139,36 @@ def _from_hn(source: dict, cutoff: dt.datetime) -> list[dict]:
 _FETCHERS = {"rss": _from_rss, "arxiv": _from_arxiv, "hn": _from_hn}
 
 
+def window_hours() -> float:
+    """Look-back window, stretched to cover nights we deliberately skipped.
+
+    With `schedule.days` set to only some nights, a fixed 26 h window would
+    silently drop everything published while the podcast was off. So the
+    window reaches back to the previous episode (plus a little overlap),
+    capped so a long pause can't pull in a month of news at once.
+    """
+    cfg = CFG["fetch"]
+    base = float(cfg["window_hours"])
+    episodes = jload(DOCS / "episodes.json", []) or []
+    previous = [e["date"] for e in episodes if e.get("date", "") < EPISODE_DATE]
+    if not previous:
+        return base
+    gap_days = (dt.date.fromisoformat(EPISODE_DATE)
+                - dt.date.fromisoformat(max(previous))).days
+    needed = gap_days * 24 + (base - 24)  # keep the usual overlap
+    return max(base, min(needed, float(cfg.get("catch_up_max_hours", base))))
+
+
 def main() -> None:
     cfg = CFG["fetch"]
-    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=cfg["window_hours"])
-    cap = cfg["per_source_cap"]
+    hours = window_hours()
+    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=hours)
+    # A wider window means more per source is worth keeping, but the global
+    # candidate caps below still bound what reaches curation.
+    cap = int(cfg["per_source_cap"] * min(3, max(1, hours / float(cfg["window_hours"]))))
+    if hours > float(cfg["window_hours"]):
+        log(STAGE, f"catching up after skipped nights: {hours:.0f} h window "
+                   f"(normally {cfg['window_hours']} h), per-source cap {cap}")
 
     collected: list[dict] = []
     for source in CFG["sources"]:

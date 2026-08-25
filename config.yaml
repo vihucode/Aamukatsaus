@@ -29,8 +29,32 @@ retention:
   seen_days: 14           # rolling dedupe window
   issues_close_after_days: 7
 
+# WHICH NIGHTS AN EPISODE IS BUILT.
+# This is the one place to change how often the podcast rolls. Edit it on
+# github.com or in the GitHub mobile app and it takes effect that same night —
+# no code change, no redeploy.
+#
+#   days:  the mornings you want an episode waiting for you. Use weekday names
+#          (mon tue wed thu fri sat sun) or a shorthand: "all" / "weekdays" /
+#          "weekends". The name is the morning the episode appears.
+#   skip_dates: one-off dates to sit out, e.g. ["2026-08-03", "2026-08-04"].
+#   paused: false stops every automatic build until you set it back to false.
+#
+# Running "Run workflow" by hand in the Actions tab always builds an episode,
+# whatever this section says.
+#
+# Skipped nights are not lost news: the next episode automatically widens its
+# look-back window to cover the gap (see fetch.catch_up_max_hours).
+schedule:
+  days: [mon, tue, wed, thu, fri]
+  skip_dates: []
+  paused: false
+
 fetch:
-  window_hours: 26        # look-back window for new items
+  window_hours: 26        # normal look-back window for new items
+  # After skipped nights the window stretches to cover the gap, up to
+  # this many hours, so a Monday episode still carries the weekend.
+  catch_up_max_hours: 80
   per_source_cap: 15
   max_news_candidates: 100   # global cap sent to extraction/curation
   max_research_candidates: 30

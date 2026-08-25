@@ -1,8 +1,12 @@
 PY ?= python3
 
-.PHONY: all prefs fetch extract curate script tts publish feedback test-short clean
+.PHONY: all schedule prefs fetch extract curate script tts publish feedback test-short clean
 
 all: prefs fetch extract curate script tts publish feedback
+
+# Is tonight an episode night? (exit 0 = build, 1 = skip)
+schedule:
+	$(PY) -m src.schedule
 
 prefs:
 	$(PY) -m src.update_preferences
