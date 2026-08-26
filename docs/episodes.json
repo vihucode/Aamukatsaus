@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-26",
+    "title": "AI Briefing — 26 August 2026",
+    "description": "Deep dives: OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show · Claude Cowork finally remembers what you told the app in chat · Robotics startup Generalist reaches $3B valuation, sources say · Granite 4.2 LLMs: How They're Built. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-26/2026-08-26.mp3",
+    "bytes": 10783531,
+    "seconds": 1335
+  },
+  {
     "date": "2026-08-25",
     "title": "AI Briefing — 25 August 2026",
     "description": "Deep dives: Nvidia senior manager linked to Supermicro scheme smuggling AI servers to China · Hugging Face reportedly in talks to be acquired for $13B · OpenAI is building AI agents for everything. Will everyone use them? · AI is hitting entry-level jobs hardest, Stanford study finds. Plus 7 quick hits and the research corner.",
