@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-27",
+    "title": "AI Briefing — 27 August 2026",
+    "description": "Deep dives: OpenAI’s rogue AI model incident was worse than we thought · Nvidia closes in on Hugging Face acquisition · Anthropic continues compute-gobbling streak in $45B deal with Nscale · CEO fired developers to make room for AI. Developers create open source AI CEO. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-27/2026-08-27.mp3",
+    "bytes": 13319105,
+    "seconds": 1651
+  },
+  {
     "date": "2026-08-26",
     "title": "AI Briefing — 26 August 2026",
     "description": "Deep dives: OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show · Claude Cowork finally remembers what you told the app in chat · Robotics startup Generalist reaches $3B valuation, sources say · Granite 4.2 LLMs: How They're Built. Plus 7 quick hits and the research corner.",

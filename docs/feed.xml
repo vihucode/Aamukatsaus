@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2026 02:59:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 11:57:50 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 27 August 2026</title>
+      <description>Deep dives: OpenAI’s rogue AI model incident was worse than we thought · Nvidia closes in on Hugging Face acquisition · Anthropic continues compute-gobbling streak in $45B deal with Nscale · CEO fired developers to make room for AI. Developers create open source AI CEO. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-27.md</link>
+      <guid isPermaLink="false">2026-08-27</guid>
+      <pubDate>Thu, 27 Aug 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-27/2026-08-27.mp3" length="13319105" type="audio/mpeg"/>
+      <itunes:duration>0:27:31</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 26 August 2026</title>
       <description>Deep dives: OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show · Claude Cowork finally remembers what you told the app in chat · Robotics startup Generalist reaches $3B valuation, sources say · Granite 4.2 LLMs: How They're Built. Plus 7 quick hits and the research corner.</description>
