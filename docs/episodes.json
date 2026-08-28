@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-08-28",
+    "title": "AI Briefing — 28 August 2026",
+    "description": "Deep dives: Anthropic gets its first court win over the Pentagon’s supply chain risk label · Anthropic's new hardware standard lets AI agents control the physical world · Here’s all the times AI has gone rogue and hacked other companies · Report: Nvidia to acquire AI model repository Hugging Face for $13 billion. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-28/2026-08-28.mp3",
+    "bytes": 11560248,
+    "seconds": 1432
+  },
+  {
     "date": "2026-08-27",
     "title": "AI Briefing — 27 August 2026",
     "description": "Deep dives: OpenAI’s rogue AI model incident was worse than we thought · Nvidia closes in on Hugging Face acquisition · Anthropic continues compute-gobbling streak in $45B deal with Nscale · CEO fired developers to make room for AI. Developers create open source AI CEO. Plus 7 quick hits and the research corner.",
