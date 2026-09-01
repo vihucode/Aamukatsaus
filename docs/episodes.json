@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-01",
+    "title": "AI Briefing — 1 September 2026",
+    "description": "Deep dives: DoltLite: A SQLite fork with Git-style version control, built with 2k agent PRs · The Hugging Face hack could indicate cultural issues at OpenAI · Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout · Apple caught off guard by AI demand for Mac Mini and Mac Studio. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-01/2026-09-01.mp3",
+    "bytes": 12318349,
+    "seconds": 1526
+  },
+  {
     "date": "2026-08-31",
     "title": "AI Briefing — 31 August 2026",
     "description": "Deep dives: Understanding ChatGPT Work · The U.S. is building barriers around drones and robots, but China has scale to get around them · An Anthropic researcher just gave us a peek at self-improving AI · Inside Meta’s push to put robots to work in data centers. Plus 7 quick hits and the research corner.",
