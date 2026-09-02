@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-02",
+    "title": "AI Briefing — 2 September 2026",
+    "description": "Deep dives: Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work · OpenAI’s Astra model is on the way — and very good at breaking into computer systems · AIR raises $50M to help companies vet the skills and add-ons AI agents use · Introducing agentic video understanding with Gemini. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-02/2026-09-02.mp3",
+    "bytes": 12340733,
+    "seconds": 1529
+  },
+  {
     "date": "2026-09-01",
     "title": "AI Briefing — 1 September 2026",
     "description": "Deep dives: DoltLite: A SQLite fork with Git-style version control, built with 2k agent PRs · The Hugging Face hack could indicate cultural issues at OpenAI · Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout · Apple caught off guard by AI demand for Mac Mini and Mac Studio. Plus 7 quick hits and the research corner.",
