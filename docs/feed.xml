@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2026 06:19:18 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 06:17:40 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 3 September 2026</title>
+      <description>Deep dives: Palo Alto Networks paid $500M for Thrive-backed Console, sources say · OpenAI’s new reasoning technique alarms AI safety experts · HiddenLayer nabs $100M as enterprises rush to secure their AI deployments · Wonderful more than doubles its valuation to $5B in under 6 months. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-09-03.md</link>
+      <guid isPermaLink="false">2026-09-03</guid>
+      <pubDate>Thu, 03 Sep 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-03/2026-09-03.mp3" length="11599159" type="audio/mpeg"/>
+      <itunes:duration>0:23:56</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 2 September 2026</title>
       <description>Deep dives: Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work · OpenAI’s Astra model is on the way — and very good at breaking into computer systems · AIR raises $50M to help companies vet the skills and add-ons AI agents use · Introducing agentic video understanding with Gemini. Plus 7 quick hits and the research corner.</description>
