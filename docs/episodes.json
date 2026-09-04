@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-04",
+    "title": "AI Briefing — 4 September 2026",
+    "description": "Deep dives: GPT-6 Astra · Nvidia buys Hugging Face, the GitHub of AI, for $13 billion · Grep beats LSP? Why coding agents ignore your fancier tools · Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-04/2026-09-04.mp3",
+    "bytes": 11479294,
+    "seconds": 1421
+  },
+  {
     "date": "2026-09-03",
     "title": "AI Briefing — 3 September 2026",
     "description": "Deep dives: Palo Alto Networks paid $500M for Thrive-backed Console, sources say · OpenAI’s new reasoning technique alarms AI safety experts · HiddenLayer nabs $100M as enterprises rush to secure their AI deployments · Wonderful more than doubles its valuation to $5B in under 6 months. Plus 7 quick hits and the research corner.",
