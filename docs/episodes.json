@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-08",
+    "title": "AI Briefing — 8 September 2026",
+    "description": "Deep dives: Mistral raises €3B to make sovereign, open-weight AI the technology frontier · We have a year to fix security everywhere · How well do agents use test/verification techniques? · The VMs Powering Mobile Agents (Instinct, Claude Code). Plus 7 quick hits.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-08/2026-09-08.mp3",
+    "bytes": 12514568,
+    "seconds": 1551
+  },
+  {
     "date": "2026-09-07",
     "title": "AI Briefing — 7 September 2026",
     "description": "Deep dives: Research acceleration: The view inside OpenAI · OpenAI’s rogue agents keep escaping, with no formal process to investigate them · An Alien Mind · Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs. Plus 7 quick hits and the research corner.",
