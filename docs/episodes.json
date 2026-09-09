@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-09",
+    "title": "AI Briefing — 9 September 2026",
+    "description": "Deep dives: On the Navier–Stokes Millennium Prize Problem · What OpenAI’s latest controversy tells us about the future of math · I resigned from Anthropic today · Hackers are stealing Claude tokens from subscribers. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-09/2026-09-09.mp3",
+    "bytes": 11225129,
+    "seconds": 1390
+  },
+  {
     "date": "2026-09-08",
     "title": "AI Briefing — 8 September 2026",
     "description": "Deep dives: Mistral raises €3B to make sovereign, open-weight AI the technology frontier · We have a year to fix security everywhere · How well do agents use test/verification techniques? · The VMs Powering Mobile Agents (Instinct, Claude Code). Plus 7 quick hits.",
