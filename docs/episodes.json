@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-14",
+    "title": "AI Briefing — 14 September 2026",
+    "description": "Deep dives: Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher · Perplexity trusts GPT-6 Astra with end-to-end systems · Anthropic CEO outlines plan to slow AI development · OpenAI’s rogue AI tried to hack another company in May. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-14/2026-09-14.mp3",
+    "bytes": 11263203,
+    "seconds": 1394
+  },
+  {
     "date": "2026-09-11",
     "title": "AI Briefing — 11 September 2026",
     "description": "Deep dives: OpenAI Agents API · Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek · Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra · Google will buy half the electricity from one of Finland's nuclear power plants. Plus 7 quick hits and the research corner.",
