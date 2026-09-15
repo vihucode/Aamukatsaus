@@ -1,18 +1,18 @@
 {
   "topics": {
-    "AI agents & orchestration": 1.611,
-    "LLM releases & evals": 1.261,
-    "Microsoft & Copilot ecosystem": 1.161,
-    "dev tooling & developer experience": 1.261,
-    "ML research": 1.061,
-    "open-source AI": 1.211,
-    "chips/GPU & AI infrastructure": 1.311,
+    "AI agents & orchestration": 1.608,
+    "LLM releases & evals": 1.258,
+    "Microsoft & Copilot ecosystem": 1.158,
+    "dev tooling & developer experience": 1.258,
+    "ML research": 1.058,
+    "open-source AI": 1.208,
+    "chips/GPU & AI infrastructure": 1.308,
     "AI policy & regulation": 1.0,
-    "security": 1.461,
+    "security": 1.458,
     "big tech business": 1.0,
-    "consumer gadgets": 0.739,
-    "crypto": 0.439,
-    "AI labor impact": 1.061
+    "consumer gadgets": 0.742,
+    "crypto": 0.442,
+    "AI labor impact": 1.058
   },
   "boosted_entities": [
     "Anthropic",
@@ -21,5 +21,5 @@
   ],
   "muted_entities": [],
   "style_notes": "Strong appetite for AI agents and infrastructure security. Growing interest in labor/skill impact of AI adoption alongside technical depth.",
-  "updated": "2026-09-14"
+  "updated": "2026-09-15"
 }
