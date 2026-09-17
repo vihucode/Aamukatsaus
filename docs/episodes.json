@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-17",
+    "title": "AI Briefing — 17 September 2026",
+    "description": "Deep dives: DeepSeek-v4.1 Flash: Pushing the Limits of KV Cache Compression · Anthropic and OpenAI want to embed safety evaluators. Will they really be independent? · Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026 · Apple reportedly building server packed with M-series Ultra chips for AI. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-17/2026-09-17.mp3",
+    "bytes": 10727889,
+    "seconds": 1328
+  },
+  {
     "date": "2026-09-16",
     "title": "AI Briefing — 16 September 2026",
     "description": "Deep dives: Gemini 3.8 Live and 3.8 Live Extended Thinking · Introducing System One Models and Jev · We got admin access to Baseten's production GitHub · Microsoft announces Windows and Surface event for October 7th. Plus 7 quick hits and the research corner.",
