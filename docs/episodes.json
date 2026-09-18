@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-18",
+    "title": "AI Briefing — 18 September 2026",
+    "description": "Deep dives: Hacking OpenAI · Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’ · Claude Code relaunches Projects to manage multiple AI agents in the cloud · Astra for Law. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-18/2026-09-18.mp3",
+    "bytes": 12389474,
+    "seconds": 1535
+  },
+  {
     "date": "2026-09-17",
     "title": "AI Briefing — 17 September 2026",
     "description": "Deep dives: DeepSeek-v4.1 Flash: Pushing the Limits of KV Cache Compression · Anthropic and OpenAI want to embed safety evaluators. Will they really be independent? · Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026 · Apple reportedly building server packed with M-series Ultra chips for AI. Plus 7 quick hits and the research corner.",
