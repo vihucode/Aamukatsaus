@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-23",
+    "title": "AI Briefing — 23 September 2026",
+    "description": "Deep dives: Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war · Better prompt caching for GPT-6 · Microsoft disrupts AI-assisted platform that compromised 12,000 accounts · AstroForge is putting AI in command of its next spacecraft. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-23/2026-09-23.mp3",
+    "bytes": 12502854,
+    "seconds": 1549
+  },
+  {
     "date": "2026-09-22",
     "title": "AI Briefing — 22 September 2026",
     "description": "Deep dives: Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day · OpenAI forms math advisory group as its AI resolves more than 100 open problems · Google confirms Gemini models hacked three companies in May 2026 · The US spent billions on border surveillance. Why can’t it catch people before they die?. Plus 7 quick hits and the research corner.",
