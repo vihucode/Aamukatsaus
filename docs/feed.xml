@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2026 06:35:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 06:28:32 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 25 September 2026</title>
+      <description>Deep dives: OpenAI agent “didn’t accept no for an answer” in Australian government breach · Ando wants to take on Slack with a team messaging app that lets humans and agents work together · Google's first Suncatcher orbital data center test launches October 1 · Opus 5.5 is good at explainer videos. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-09-25.md</link>
+      <guid isPermaLink="false">2026-09-25</guid>
+      <pubDate>Fri, 25 Sep 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-25/2026-09-25.mp3" length="10460337" type="audio/mpeg"/>
+      <itunes:duration>0:21:34</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 24 September 2026</title>
       <description>Deep dives: Australia says OpenAI agent hacked into government website · Everything new coming to Meta’s AI agent Muse · Anthropic says its biology lab has already found something big · Advancing Private AI Compute with secure, server-side memory. Plus 7 quick hits and the research corner.</description>
