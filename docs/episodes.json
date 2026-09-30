@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-09-30",
+    "title": "AI Briefing — 30 September 2026",
+    "description": "Deep dives: Sam Altman says OpenAI won’t go public until its models are safe · AMD acquires World Labs AI startup, upping the ante against Nvidia · Here's what actually happened in OpenAI's Australian gov't server hack · Anthropic’s IPO pitch includes a warning about human extinction. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-30/2026-09-30.mp3",
+    "bytes": 11949969,
+    "seconds": 1480
+  },
+  {
     "date": "2026-09-29",
     "title": "AI Briefing — 29 September 2026",
     "description": "Deep dives: Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity · OpenAI reportedly ditches model over safety concerns · Nvidia launches new platform for reining in rogue AI agents · AMD is acquiring AI company World Labs in a deal worth more than $8 billion. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-23/2026-07-23.mp3",
     "bytes": 11109026,
     "seconds": 1375
-  },
-  {
-    "date": "2026-07-22",
-    "title": "AI Briefing — 22 July 2026",
-    "description": "Deep dives: How OpenAI’s human mistake led to the AI-powered hack on Hugging Face. Plus 3 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-22/2026-07-22.mp3",
-    "bytes": 2731651,
-    "seconds": 329
   }
 ]
