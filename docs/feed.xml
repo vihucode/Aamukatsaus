@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 07:26:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 07:39:06 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 1 October 2026</title>
+      <description>Deep dives: Quoting Matthew Green · Google releases Gemini 4 Argon, called its most powerful model yet · Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation · "An AI did it" is no defense, says nonprofit suing OpenAI over Hugging Face hack. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-10-01.md</link>
+      <guid isPermaLink="false">2026-10-01</guid>
+      <pubDate>Thu, 01 Oct 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-01/2026-10-01.mp3" length="13236894" type="audio/mpeg"/>
+      <itunes:duration>0:27:21</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 30 September 2026</title>
       <description>Deep dives: Sam Altman says OpenAI won’t go public until its models are safe · AMD acquires World Labs AI startup, upping the ante against Nvidia · Here's what actually happened in OpenAI's Australian gov't server hack · Anthropic’s IPO pitch includes a warning about human extinction. Plus 7 quick hits and the research corner.</description>
@@ -600,16 +610,6 @@
       <pubDate>Fri, 24 Jul 2026 03:30:00 +0000</pubDate>
       <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-24/2026-07-24.mp3" length="11635135" type="audio/mpeg"/>
       <itunes:duration>0:24:01</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>AI Briefing — 23 July 2026</title>
-      <description>Deep dives: OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened · Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable · Google justifies its massive AI spending with a booming cloud business · After shocking quarter, IBM insists that AI isn’t killing the mainframe. Plus 7 quick hits and the research corner.</description>
-      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-07-23.md</link>
-      <guid isPermaLink="false">2026-07-23</guid>
-      <pubDate>Thu, 23 Jul 2026 03:30:00 +0000</pubDate>
-      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-23/2026-07-23.mp3" length="11109026" type="audio/mpeg"/>
-      <itunes:duration>0:22:55</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>

@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-01",
+    "title": "AI Briefing — 1 October 2026",
+    "description": "Deep dives: Quoting Matthew Green · Google releases Gemini 4 Argon, called its most powerful model yet · Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation · \"An AI did it\" is no defense, says nonprofit suing OpenAI over Hugging Face hack. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-01/2026-10-01.mp3",
+    "bytes": 13236894,
+    "seconds": 1641
+  },
+  {
     "date": "2026-09-30",
     "title": "AI Briefing — 30 September 2026",
     "description": "Deep dives: Sam Altman says OpenAI won’t go public until its models are safe · AMD acquires World Labs AI startup, upping the ante against Nvidia · Here's what actually happened in OpenAI's Australian gov't server hack · Anthropic’s IPO pitch includes a warning about human extinction. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-24/2026-07-24.mp3",
     "bytes": 11635135,
     "seconds": 1441
-  },
-  {
-    "date": "2026-07-23",
-    "title": "AI Briefing — 23 July 2026",
-    "description": "Deep dives: OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened · Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable · Google justifies its massive AI spending with a booming cloud business · After shocking quarter, IBM insists that AI isn’t killing the mainframe. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-23/2026-07-23.mp3",
-    "bytes": 11109026,
-    "seconds": 1375
   }
 ]
