@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-02",
+    "title": "AI Briefing — 2 October 2026",
+    "description": "Deep dives: AutoSynthData: Generating Training Data for Enterprise Agents · Inside Microsoft’s big Copilot rethink · Pi 1.0 · Memory executives expect RAM shortage to continue through 2028. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-02/2026-10-02.mp3",
+    "bytes": 11703124,
+    "seconds": 1449
+  },
+  {
     "date": "2026-10-01",
     "title": "AI Briefing — 1 October 2026",
     "description": "Deep dives: Quoting Matthew Green · Google releases Gemini 4 Argon, called its most powerful model yet · Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation · \"An AI did it\" is no defense, says nonprofit suing OpenAI over Hugging Face hack. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-25/2026-07-25.mp3",
     "bytes": 12295125,
     "seconds": 1523
-  },
-  {
-    "date": "2026-07-24",
-    "title": "AI Briefing — 24 July 2026",
-    "description": "Deep dives: AI arms race in line for a reckoning after OpenAI hacking incident · How AI guardrails are impeding the work of offensive cybersecurity researchers · AMD takes on Nvidia with its Helios AI rack-scale system · AI Companies Are Trying to Hide a Staggering Amount of Debt. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-24/2026-07-24.mp3",
-    "bytes": 11635135,
-    "seconds": 1441
   }
 ]
