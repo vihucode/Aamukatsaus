@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-05",
+    "title": "AI Briefing — 5 October 2026",
+    "description": "Deep dives: The Agent Said It Was Done. The Database Disagreed. · OpenAI safety employee resigns, claiming the company’s ‘culture is broken’ · Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s · Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-05/2026-10-05.mp3",
+    "bytes": 10913437,
+    "seconds": 1351
+  },
+  {
     "date": "2026-10-02",
     "title": "AI Briefing — 2 October 2026",
     "description": "Deep dives: AutoSynthData: Generating Training Data for Enterprise Agents · Inside Microsoft’s big Copilot rethink · Pi 1.0 · Memory executives expect RAM shortage to continue through 2028. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-26/2026-07-26.mp3",
     "bytes": 10878918,
     "seconds": 1346
-  },
-  {
-    "date": "2026-07-25",
-    "title": "AI Briefing — 25 July 2026",
-    "description": "Deep dives: Introducing Claude Opus 5 · Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M · Be skeptical of OpenAI's rogue hacker agent story · AI firms want more data centers; Trump's EPA may give neighbors less say. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-25/2026-07-25.mp3",
-    "bytes": 12295125,
-    "seconds": 1523
   }
 ]
