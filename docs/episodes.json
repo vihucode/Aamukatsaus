@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-07",
+    "title": "AI Briefing — 7 October 2026",
+    "description": "Deep dives: Sharing AI progress in mathematics · OpenAI “rogue” agent activities found on Wikimedia projects · Strands Decider 2B: a small, open-source, decision model · OpenTPU – An open-source AI accelerator, developed by AI. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-07/2026-10-07.mp3",
+    "bytes": 11204000,
+    "seconds": 1387
+  },
+  {
     "date": "2026-10-06",
     "title": "AI Briefing — 6 October 2026",
     "description": "Deep dives: MCP for agent-to-agent comms may be the riskiest protocol you've never heard of · Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates · Beam: Reflection's 501B open-weight model · HackerRank’s AI interviewer offers a glimpse into what job interviews could become. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-28/2026-07-28.mp3",
     "bytes": 11722994,
     "seconds": 1452
-  },
-  {
-    "date": "2026-07-27",
-    "title": "AI Briefing — 27 July 2026",
-    "description": "Deep dives: Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack · US citizen charged after GrapheneOS phone wipes during airport search · The relay market powering token resellers and fraud · Are brain waves the next unlock for physical AI?. Plus 2 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-27/2026-07-27.mp3",
-    "bytes": 9890712,
-    "seconds": 1223
   }
 ]
