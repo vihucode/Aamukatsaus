@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-08",
+    "title": "AI Briefing — 8 October 2026",
+    "description": "Deep dives: Microsoft event debuts new AI-friendly hardware and Windows changes · Claude Haiku 5.5 · Nous Research confirms it hit $1.5B valuation, launches AI agents for business users · The Mathocalypse. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-08/2026-10-08.mp3",
+    "bytes": 10746085,
+    "seconds": 1330
+  },
+  {
     "date": "2026-10-07",
     "title": "AI Briefing — 7 October 2026",
     "description": "Deep dives: Sharing AI progress in mathematics · OpenAI “rogue” agent activities found on Wikimedia projects · Strands Decider 2B: a small, open-source, decision model · OpenTPU – An open-source AI accelerator, developed by AI. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-29/2026-07-29.mp3",
     "bytes": 11360679,
     "seconds": 1407
-  },
-  {
-    "date": "2026-07-28",
-    "title": "AI Briefing — 28 July 2026",
-    "description": "Deep dives: OpenAI called the Hugging Face attack unprecedented. But we’ve been here before. · Our position on open-weights models · Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system · An opinionated guide to which AI to use to do stuff. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-28/2026-07-28.mp3",
-    "bytes": 11722994,
-    "seconds": 1452
   }
 ]
