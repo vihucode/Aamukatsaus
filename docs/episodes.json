@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-09",
+    "title": "AI Briefing — 9 October 2026",
+    "description": "Deep dives: Anthropic launches free AI security scans for open-source projects · Google brings agentic AI to Gemini, starting with businesses · Microsoft 365 Family subscribers will finally be able to share AI benefits · Amazon builds 1,000th satellite, will launch space internet service by end of year. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-09/2026-10-09.mp3",
+    "bytes": 10970545,
+    "seconds": 1358
+  },
+  {
     "date": "2026-10-08",
     "title": "AI Briefing — 8 October 2026",
     "description": "Deep dives: Microsoft event debuts new AI-friendly hardware and Windows changes · Claude Haiku 5.5 · Nous Research confirms it hit $1.5B valuation, launches AI agents for business users · The Mathocalypse. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-30/2026-07-30.mp3",
     "bytes": 11267172,
     "seconds": 1395
-  },
-  {
-    "date": "2026-07-29",
-    "title": "AI Briefing — 29 July 2026",
-    "description": "Deep dives: We now have a better understanding how OpenAI hacked into Hugging Face · Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents · Discovering cryptographic weaknesses with Claude · Scientific computing in the age of agentic AI. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-29/2026-07-29.mp3",
-    "bytes": 11360679,
-    "seconds": 1407
   }
 ]

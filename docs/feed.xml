@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 07:55:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 07:49:28 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 9 October 2026</title>
+      <description>Deep dives: Anthropic launches free AI security scans for open-source projects · Google brings agentic AI to Gemini, starting with businesses · Microsoft 365 Family subscribers will finally be able to share AI benefits · Amazon builds 1,000th satellite, will launch space internet service by end of year. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-10-09.md</link>
+      <guid isPermaLink="false">2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-09/2026-10-09.mp3" length="10970545" type="audio/mpeg"/>
+      <itunes:duration>0:22:38</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 8 October 2026</title>
       <description>Deep dives: Microsoft event debuts new AI-friendly hardware and Windows changes · Claude Haiku 5.5 · Nous Research confirms it hit $1.5B valuation, launches AI agents for business users · The Mathocalypse. Plus 7 quick hits and the research corner.</description>
@@ -600,16 +610,6 @@
       <pubDate>Thu, 30 Jul 2026 03:30:00 +0000</pubDate>
       <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-30/2026-07-30.mp3" length="11267172" type="audio/mpeg"/>
       <itunes:duration>0:23:15</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>AI Briefing — 29 July 2026</title>
-      <description>Deep dives: We now have a better understanding how OpenAI hacked into Hugging Face · Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents · Discovering cryptographic weaknesses with Claude · Scientific computing in the age of agentic AI. Plus 7 quick hits and the research corner.</description>
-      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-07-29.md</link>
-      <guid isPermaLink="false">2026-07-29</guid>
-      <pubDate>Wed, 29 Jul 2026 03:30:00 +0000</pubDate>
-      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-29/2026-07-29.mp3" length="11360679" type="audio/mpeg"/>
-      <itunes:duration>0:23:27</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
