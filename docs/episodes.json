@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-14",
+    "title": "AI Briefing — 14 October 2026",
+    "description": "Deep dives: Redesigning source control at Anthropic · Gemini 4 Argon · Anthropic conjures threat that doesn't exist yet to stoke fears of AI apocalypse · Redesigning source control at Anthropic. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-14/2026-10-14.mp3",
+    "bytes": 13271620,
+    "seconds": 1645
+  },
+  {
     "date": "2026-10-09",
     "title": "AI Briefing — 9 October 2026",
     "description": "Deep dives: Anthropic launches free AI security scans for open-source projects · Google brings agentic AI to Gemini, starting with businesses · Microsoft 365 Family subscribers will finally be able to share AI benefits · Amazon builds 1,000th satellite, will launch space internet service by end of year. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-31/2026-07-31.mp3",
     "bytes": 12130075,
     "seconds": 1503
-  },
-  {
-    "date": "2026-07-30",
-    "title": "AI Briefing — 30 July 2026",
-    "description": "Deep dives: Microsoft is openly competing with OpenAI, Anthropic more than ever · Microsoft confirms Copilot ‘super app’ coming this year · Anthropic is finding bugs faster than Microsoft can fix them · The Hugging Face AI break-in explained. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-30/2026-07-30.mp3",
-    "bytes": 11267172,
-    "seconds": 1395
   }
 ]
