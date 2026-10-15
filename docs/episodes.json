@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-15",
+    "title": "AI Briefing — 15 October 2026",
+    "description": "Deep dives: Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis · The AI race is back on · Figma announces new features to define how agents work on its platform · Containment and monitoring failures are to blame for AI hacking reports: experts. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-15/2026-10-15.mp3",
+    "bytes": 12850942,
+    "seconds": 1593
+  },
+  {
     "date": "2026-10-14",
     "title": "AI Briefing — 14 October 2026",
     "description": "Deep dives: Redesigning source control at Anthropic · Gemini 4 Argon · Anthropic conjures threat that doesn't exist yet to stoke fears of AI apocalypse · Redesigning source control at Anthropic. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-01/2026-08-01.mp3",
     "bytes": 11416325,
     "seconds": 1414
-  },
-  {
-    "date": "2026-07-31",
-    "title": "AI Briefing — 31 July 2026",
-    "description": "Deep dives: Anthropic says its own AI models breached three companies during security tests · We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447 · Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI · New MCP specification addresses the main barrier to enterprise adoption. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-07-31/2026-07-31.mp3",
-    "bytes": 12130075,
-    "seconds": 1503
   }
 ]
