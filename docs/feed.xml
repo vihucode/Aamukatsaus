@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 06:34:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 06:21:57 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 16 October 2026</title>
+      <description>Deep dives: Anthropic is letting METR researchers look under the hood with employee-level access · Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax” · Meta launches an open-weight AI model that runs on Macs · Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-10-16.md</link>
+      <guid isPermaLink="false">2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-16/2026-10-16.mp3" length="11963564" type="audio/mpeg"/>
+      <itunes:duration>0:24:42</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 15 October 2026</title>
       <description>Deep dives: Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis · The AI race is back on · Figma announces new features to define how agents work on its platform · Containment and monitoring failures are to blame for AI hacking reports: experts. Plus 7 quick hits and the research corner.</description>
@@ -600,16 +610,6 @@
       <pubDate>Sun, 02 Aug 2026 03:30:00 +0000</pubDate>
       <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-02/2026-08-02.mp3" length="10616597" type="audio/mpeg"/>
       <itunes:duration>0:21:54</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>AI Briefing — 1 August 2026</title>
-      <description>Deep dives: Claude published malicious code to the Internet and attacked 3 real companies · Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp) · deepseek-ai/DeepSeek-V4-Flash-0731 · Tailscale didn't stop the Hugging Face intrusion. Plus 7 quick hits.</description>
-      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-01.md</link>
-      <guid isPermaLink="false">2026-08-01</guid>
-      <pubDate>Sat, 01 Aug 2026 03:30:00 +0000</pubDate>
-      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-01/2026-08-01.mp3" length="11416325" type="audio/mpeg"/>
-      <itunes:duration>0:23:34</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
