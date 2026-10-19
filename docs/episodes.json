@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-19",
+    "title": "AI Briefing — 19 October 2026",
+    "description": "Deep dives: Hybrid Reasoning Agents: LLM agents that think in latent space, act through text · Anthropic gives outside AI watchdog “employee-like” access · Anthropic says its workforce has become less junior and is spending more time in meetings · OpenAI models hacked a crypto wallet and breached more websites. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-19/2026-10-19.mp3",
+    "bytes": 11065518,
+    "seconds": 1370
+  },
+  {
     "date": "2026-10-16",
     "title": "AI Briefing — 16 October 2026",
     "description": "Deep dives: Anthropic is letting METR researchers look under the hood with employee-level access · Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax” · Meta launches an open-weight AI model that runs on Macs · Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-03/2026-08-03.mp3",
     "bytes": 11874448,
     "seconds": 1471
-  },
-  {
-    "date": "2026-08-02",
-    "title": "AI Briefing — 2 August 2026",
-    "description": "Deep dives: Open letters about AI development · Ten advances in mathematics and theoretical computer science · CISA Alert: Water Sector PLC Targeting · AI financial advice is surprisingly good, especially if you ask right questions. Plus 7 quick hits.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-02/2026-08-02.mp3",
-    "bytes": 10616597,
-    "seconds": 1314
   }
 ]
