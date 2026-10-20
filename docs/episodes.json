@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-20",
+    "title": "AI Briefing — 20 October 2026",
+    "description": "Deep dives: Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’ · Nscale and Anthropic are reportedly in talks for yet another $45B compute deal · “We were looking at it wrong”: The explosive claim that’s upended the AI world · MiniMax M3.1 Flash. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-20/2026-10-20.mp3",
+    "bytes": 10843150,
+    "seconds": 1342
+  },
+  {
     "date": "2026-10-19",
     "title": "AI Briefing — 19 October 2026",
     "description": "Deep dives: Hybrid Reasoning Agents: LLM agents that think in latent space, act through text · Anthropic gives outside AI watchdog “employee-like” access · Anthropic says its workforce has become less junior and is spending more time in meetings · OpenAI models hacked a crypto wallet and breached more websites. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-04/2026-08-04.mp3",
     "bytes": 12789439,
     "seconds": 1585
-  },
-  {
-    "date": "2026-08-03",
-    "title": "AI Briefing — 3 August 2026",
-    "description": "Deep dives: OpenAI's super PAC is funding AI-generated news site attacking industry critics · AI migrated legacy COBOL programs to Java, bugs included · Karpathy’s Pelican · Show HN: Mu – Tools for Agents. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-03/2026-08-03.mp3",
-    "bytes": 11874448,
-    "seconds": 1471
   }
 ]
