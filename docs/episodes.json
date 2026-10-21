@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-21",
+    "title": "AI Briefing — 21 October 2026",
+    "description": "Deep dives: PHP warns it plans to release 2 emergency patches imminently · Anthropic pitches AI safety bill that may block a model if 50+ people could be killed · Anthropic’s cloud partnerships are getting messy · The Internet goes on high alert after discovery of 8 compromised TLS certs. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-21/2026-10-21.mp3",
+    "bytes": 13169118,
+    "seconds": 1632
+  },
+  {
     "date": "2026-10-20",
     "title": "AI Briefing — 20 October 2026",
     "description": "Deep dives: Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’ · Nscale and Anthropic are reportedly in talks for yet another $45B compute deal · “We were looking at it wrong”: The explosive claim that’s upended the AI world · MiniMax M3.1 Flash. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-05/2026-08-05.mp3",
     "bytes": 11631162,
     "seconds": 1440
-  },
-  {
-    "date": "2026-08-04",
-    "title": "AI Briefing — 4 August 2026",
-    "description": "Deep dives: Quoting Steve Yegge · Ten advances in mathematics and theoretical computer science · How we built a realtime system for responsive voice AI in six months · An AI-supervised remote exam went so badly that 58,000 students must retake it. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-04/2026-08-04.mp3",
-    "bytes": 12789439,
-    "seconds": 1585
   }
 ]
