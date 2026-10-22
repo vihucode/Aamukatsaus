@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-22",
+    "title": "AI Briefing — 22 October 2026",
+    "description": "Deep dives: Today's PHP security release, and how we're strengthening security · Meta says Muse has over 10M users, with shopping a top activity · While Amazon blocks AI agents, Walmart rolls out the welcome mat · Data centers could erase decades of air quality gains. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-22/2026-10-22.mp3",
+    "bytes": 11649781,
+    "seconds": 1443
+  },
+  {
     "date": "2026-10-21",
     "title": "AI Briefing — 21 October 2026",
     "description": "Deep dives: PHP warns it plans to release 2 emergency patches imminently · Anthropic pitches AI safety bill that may block a model if 50+ people could be killed · Anthropic’s cloud partnerships are getting messy · The Internet goes on high alert after discovery of 8 compromised TLS certs. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-06/2026-08-06.mp3",
     "bytes": 11985736,
     "seconds": 1485
-  },
-  {
-    "date": "2026-08-05",
-    "title": "AI Briefing — 5 August 2026",
-    "description": "Deep dives: New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging · Open-weight AI models are catching up to the frontier. The safety gap remains. · Third-party cyber evaluations involving OpenAI models · Mistral's Shieldstral: 3B open-weights model for multimodal moderation. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-05/2026-08-05.mp3",
-    "bytes": 11631162,
-    "seconds": 1440
   }
 ]
