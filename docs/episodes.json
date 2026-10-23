@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-23",
+    "title": "AI Briefing — 23 October 2026",
+    "description": "Deep dives: Left alone with nothing to do, AI agents started playing · LLMs are making formal software verification feasible at a much larger scale · Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’ · Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-23/2026-10-23.mp3",
+    "bytes": 11867338,
+    "seconds": 1470
+  },
+  {
     "date": "2026-10-22",
     "title": "AI Briefing — 22 October 2026",
     "description": "Deep dives: Today's PHP security release, and how we're strengthening security · Meta says Muse has over 10M users, with shopping a top activity · While Amazon blocks AI agents, Walmart rolls out the welcome mat · Data centers could erase decades of air quality gains. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-07/2026-08-07.mp3",
     "bytes": 10655297,
     "seconds": 1319
-  },
-  {
-    "date": "2026-08-06",
-    "title": "AI Briefing — 6 August 2026",
-    "description": "Deep dives: Incident Report: unsanctioned agent behaviour during cyber testing · Thousands of servers can be backdoored by exploiting buggy motherboard controllers · Jeff Dean and other top AI researchers are leaving Google to launch their own startup · Anthropic is hiring an AI chip design team. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-06/2026-08-06.mp3",
-    "bytes": 11985736,
-    "seconds": 1485
   }
 ]
