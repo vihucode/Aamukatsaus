@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-26",
+    "title": "AI Briefing — 26 October 2026",
+    "description": "Deep dives: The State of Context Engineering · OpenAI says it will no longer train its AI models on the live internet, citing “significant risks” · A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis · IBM CEO says open weight models are now good and cheap on-prem. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-26/2026-10-26.mp3",
+    "bytes": 10815746,
+    "seconds": 1339
+  },
+  {
     "date": "2026-10-23",
     "title": "AI Briefing — 23 October 2026",
     "description": "Deep dives: Left alone with nothing to do, AI agents started playing · LLMs are making formal software verification feasible at a much larger scale · Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’ · Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-08/2026-08-08.mp3",
     "bytes": 11039158,
     "seconds": 1366
-  },
-  {
-    "date": "2026-08-07",
-    "title": "AI Briefing — 7 August 2026",
-    "description": "Deep dives: Anthropic will design its own hardware to power Claude · ChatGPT brings unlimited text chats to free users · WeatherNext: AI model achieves breakthrough in forecasting cyclones · Humans missed 1 in 3 threats approving AI agent commands across 40k game runs. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-07/2026-08-07.mp3",
-    "bytes": 10655297,
-    "seconds": 1319
   }
 ]
