@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-27",
+    "title": "AI Briefing — 27 October 2026",
+    "description": "Deep dives: How OpenAI turned its coding tools into dots, an always-on personal assistant · Anthropic officially files for its public debut · Anthropic is burning gas to feed the AI boom · Cohere says Alibaba’s Qwen model tried to send a file to Beijing. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-27/2026-10-27.mp3",
+    "bytes": 12301612,
+    "seconds": 1524
+  },
+  {
     "date": "2026-10-26",
     "title": "AI Briefing — 26 October 2026",
     "description": "Deep dives: The State of Context Engineering · OpenAI says it will no longer train its AI models on the live internet, citing “significant risks” · A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis · IBM CEO says open weight models are now good and cheap on-prem. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-09/2026-08-09.mp3",
     "bytes": 10712405,
     "seconds": 1326
-  },
-  {
-    "date": "2026-08-08",
-    "title": "AI Briefing — 8 August 2026",
-    "description": "Deep dives: Now we have a timeline of the OpenAI accidental attack against Hugging Face · OpenAI says it slowed Astra model development over security concerns · After Rippling blew millions on AI in months, it built an employee ROI tool · Cloudflare launches Kitesurf, a browser built for AI agents. Plus 7 quick hits.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-08/2026-08-08.mp3",
-    "bytes": 11039158,
-    "seconds": 1366
   }
 ]
