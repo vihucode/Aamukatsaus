@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-30",
+    "title": "AI Briefing — 30 October 2026",
+    "description": "Deep dives: We ran AI agent swarms in Minecraft and Mindustry · Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity · AWS will be a $1T business, Jassy says — but first, it will spend big · We urgently need to monitor AI agents’ actions in real time. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-10-30/2026-10-30.mp3",
+    "bytes": 13018293,
+    "seconds": 1614
+  },
+  {
     "date": "2026-10-29",
     "title": "AI Briefing — 29 October 2026",
     "description": "Deep dives: Claude Code regularly sends each background agent’s transcript to its model · Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion · Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity · Anthropic just launched tools to show companies what their AI spending is buying. Plus 7 quick hits.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-12/2026-08-12.mp3",
     "bytes": 11510043,
     "seconds": 1425
-  },
-  {
-    "date": "2026-08-11",
-    "title": "AI Briefing — 11 August 2026",
-    "description": "Deep dives: As AI-led attacks multiply, OpenAI launches a new cyber model · Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows · Discovered Materials is playing AI whack-a-mole to hunt cooler chips · A researcher bought noreply.net. Companies started sending him secrets.. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-11/2026-08-11.mp3",
-    "bytes": 11668398,
-    "seconds": 1445
   }
 ]
