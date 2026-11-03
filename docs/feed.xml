@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 08:20:40 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 08:40:23 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 3 November 2026</title>
+      <description>Deep dives: Astra can read and write weights to improve Qwen · Anthropic warns that it’s very close to RSI capability, aka self-building AI · Scaling Git at OpenAI · Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens. Plus 7 quick hits.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-11-03.md</link>
+      <guid isPermaLink="false">2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-03/2026-11-03.mp3" length="10621828" type="audio/mpeg"/>
+      <itunes:duration>0:21:54</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 2 November 2026</title>
       <description>Deep dives: China's First Frontier AI Export Controls: Mofcom Announcement No. 48 · Proving and improving the Platonic Representation Hypothesis with JEPAs · Cracks are emerging in the AI spending boom · Anthropic VS code extension on Cursor backdoored for nearly 12 hours. Plus 7 quick hits and the research corner.</description>
@@ -600,16 +610,6 @@
       <pubDate>Fri, 14 Aug 2026 03:30:00 +0000</pubDate>
       <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-14/2026-08-14.mp3" length="13157402" type="audio/mpeg"/>
       <itunes:duration>0:27:11</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>AI Briefing — 13 August 2026</title>
-      <description>Deep dives: Terabytes of credentials leaked in massive supply-chain attack · DeepSeek V4 Pro 0813 (on OpenRouter) · Delta · From assistance to execution: How enterprises put AI to work. Plus 7 quick hits and the research corner.</description>
-      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-13.md</link>
-      <guid isPermaLink="false">2026-08-13</guid>
-      <pubDate>Thu, 13 Aug 2026 03:30:00 +0000</pubDate>
-      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-13/2026-08-13.mp3" length="11369467" type="audio/mpeg"/>
-      <itunes:duration>0:23:28</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
