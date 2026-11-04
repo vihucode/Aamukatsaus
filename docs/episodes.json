@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-04",
+    "title": "AI Briefing — 4 November 2026",
+    "description": "Deep dives: AMD rides data center riches to ‘largest and most profitable’ quarter in history · Anthropic is working on a system to prove AI models’ identity · Anthropic is still grappling with the economics of compute · How “reverse game theory” could keep AI agents in check. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-04/2026-11-04.mp3",
+    "bytes": 11615892,
+    "seconds": 1438
+  },
+  {
     "date": "2026-11-03",
     "title": "AI Briefing — 3 November 2026",
     "description": "Deep dives: Astra can read and write weights to improve Qwen · Anthropic warns that it’s very close to RSI capability, aka self-building AI · Scaling Git at OpenAI · Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens. Plus 7 quick hits.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-15/2026-08-15.mp3",
     "bytes": 10543173,
     "seconds": 1304
-  },
-  {
-    "date": "2026-08-14",
-    "title": "AI Briefing — 14 August 2026",
-    "description": "Deep dives: Anthropic set AI agents loose on the same task. They started a turf war. · Introducing Gemini 3.7 Flash · Anthropic could be worth $2 trillion when it goes public · Private security firms will soon be allowed to hack overseas cybercriminals. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-14/2026-08-14.mp3",
-    "bytes": 13157402,
-    "seconds": 1631
   }
 ]
