@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-05",
+    "title": "AI Briefing — 5 November 2026",
+    "description": "Deep dives: After the midterms, a bigger clash over data centers could be coming · Meta acquires AI coding startup Conductor · AMD's record quarter: Data center business doubles, while gaming craters · Hackers exploited iOS and Android flaws to infect phones. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-05/2026-11-05.mp3",
+    "bytes": 12667065,
+    "seconds": 1570
+  },
+  {
     "date": "2026-11-04",
     "title": "AI Briefing — 4 November 2026",
     "description": "Deep dives: AMD rides data center riches to ‘largest and most profitable’ quarter in history · Anthropic is working on a system to prove AI models’ identity · Anthropic is still grappling with the economics of compute · How “reverse game theory” could keep AI agents in check. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-16/2026-08-16.mp3",
     "bytes": 12294918,
     "seconds": 1523
-  },
-  {
-    "date": "2026-08-15",
-    "title": "AI Briefing — 15 August 2026",
-    "description": "Deep dives: Why does Opus 5 feel worse to work with? · Vulnerability giving attackers full control of Macs is under active exploitation · Google is making private AI practical with homomorphic encryption · OpenAI and Anthropic in price war as Chinese AI rivals gain ground. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-15/2026-08-15.mp3",
-    "bytes": 10543173,
-    "seconds": 1304
   }
 ]

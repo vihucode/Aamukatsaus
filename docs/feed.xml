@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 08:10:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 08:39:46 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 5 November 2026</title>
+      <description>Deep dives: After the midterms, a bigger clash over data centers could be coming · Meta acquires AI coding startup Conductor · AMD's record quarter: Data center business doubles, while gaming craters · Hackers exploited iOS and Android flaws to infect phones. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-11-05.md</link>
+      <guid isPermaLink="false">2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-05/2026-11-05.mp3" length="12667065" type="audio/mpeg"/>
+      <itunes:duration>0:26:10</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 4 November 2026</title>
       <description>Deep dives: AMD rides data center riches to ‘largest and most profitable’ quarter in history · Anthropic is working on a system to prove AI models’ identity · Anthropic is still grappling with the economics of compute · How “reverse game theory” could keep AI agents in check. Plus 7 quick hits and the research corner.</description>
@@ -600,16 +610,6 @@
       <pubDate>Sun, 16 Aug 2026 03:30:00 +0000</pubDate>
       <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-16/2026-08-16.mp3" length="12294918" type="audio/mpeg"/>
       <itunes:duration>0:25:23</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>AI Briefing — 15 August 2026</title>
-      <description>Deep dives: Why does Opus 5 feel worse to work with? · Vulnerability giving attackers full control of Macs is under active exploitation · Google is making private AI practical with homomorphic encryption · OpenAI and Anthropic in price war as Chinese AI rivals gain ground. Plus 7 quick hits and the research corner.</description>
-      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-15.md</link>
-      <guid isPermaLink="false">2026-08-15</guid>
-      <pubDate>Sat, 15 Aug 2026 03:30:00 +0000</pubDate>
-      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-15/2026-08-15.mp3" length="10543173" type="audio/mpeg"/>
-      <itunes:duration>0:21:44</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
