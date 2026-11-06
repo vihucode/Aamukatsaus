@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-06",
+    "title": "AI Briefing — 6 November 2026",
+    "description": "Deep dives: Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M · Inkling 2 Small · Perplexity launches its own take on AI agents for work · Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-06/2026-11-06.mp3",
+    "bytes": 11316961,
+    "seconds": 1401
+  },
+  {
     "date": "2026-11-05",
     "title": "AI Briefing — 5 November 2026",
     "description": "Deep dives: After the midterms, a bigger clash over data centers could be coming · Meta acquires AI coding startup Conductor · AMD's record quarter: Data center business doubles, while gaming craters · Hackers exploited iOS and Android flaws to infect phones. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-17/2026-08-17.mp3",
     "bytes": 13222251,
     "seconds": 1639
-  },
-  {
-    "date": "2026-08-16",
-    "title": "AI Briefing — 16 August 2026",
-    "description": "Deep dives: Anthropic shares more details about how Claude’s new watermarks will work · SpaceX officially closes its Cursor acquisition · AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code · AI has access to a vastly larger working memory than the human brain. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-16/2026-08-16.mp3",
-    "bytes": 12294918,
-    "seconds": 1523
   }
 ]
