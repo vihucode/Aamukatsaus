@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 08:36:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 08:47:52 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 9 November 2026</title>
+      <description>Deep dives: Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50” · Goldman Sachs is pulling Claude Code from its bankers and traders · Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU · Ramp data shows AI spending stalling just as Anthropic nears its IPO. Plus 7 quick hits and the research corner.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-11-09.md</link>
+      <guid isPermaLink="false">2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-09/2026-11-09.mp3" length="12311443" type="audio/mpeg"/>
+      <itunes:duration>0:25:25</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 6 November 2026</title>
       <description>Deep dives: Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M · Inkling 2 Small · Perplexity launches its own take on AI agents for work · Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure. Plus 7 quick hits and the research corner.</description>
@@ -600,16 +610,6 @@
       <pubDate>Tue, 18 Aug 2026 03:30:00 +0000</pubDate>
       <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-18/2026-08-18.mp3" length="11221153" type="audio/mpeg"/>
       <itunes:duration>0:23:09</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>AI Briefing — 17 August 2026</title>
-      <description>Deep dives: OpenAI reportedly disbanded its preparedness team · Models Are Getting Dumber on Purpose · Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+ · The AI Credit Resale Economy. Plus 7 quick hits.</description>
-      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-17.md</link>
-      <guid isPermaLink="false">2026-08-17</guid>
-      <pubDate>Mon, 17 Aug 2026 03:30:00 +0000</pubDate>
-      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-17/2026-08-17.mp3" length="13222251" type="audio/mpeg"/>
-      <itunes:duration>0:27:19</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
