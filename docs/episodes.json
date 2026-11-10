@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-10",
+    "title": "AI Briefing — 10 November 2026",
+    "description": "Deep dives: Anthropic releases new Mythos and Fable models amid RSI concerns · TPU 8tx and TPU 8i Max · Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines · Vulnerability that lets hackers SSH into Linux devices is under active exploitation. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-10/2026-11-10.mp3",
+    "bytes": 11068237,
+    "seconds": 1370
+  },
+  {
     "date": "2026-11-09",
     "title": "AI Briefing — 9 November 2026",
     "description": "Deep dives: Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50” · Goldman Sachs is pulling Claude Code from its bankers and traders · Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU · Ramp data shows AI spending stalling just as Anthropic nears its IPO. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-19/2026-08-19.mp3",
     "bytes": 11335789,
     "seconds": 1403
-  },
-  {
-    "date": "2026-08-18",
-    "title": "AI Briefing — 18 August 2026",
-    "description": "Deep dives: Anthropic’s annualized revenue surges to $65B · AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira · Hidden Airtag reveals Amazon is trashing rare books to train AI · The Defender’s Window. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-18/2026-08-18.mp3",
-    "bytes": 11221153,
-    "seconds": 1389
   }
 ]
