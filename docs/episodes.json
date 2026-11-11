@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-11",
+    "title": "AI Briefing — 11 November 2026",
+    "description": "Deep dives: All 7 Anthropic founders will each cash out about $250M in IPO · BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model · Tracking Anthropic-discovered vulnerabilities · Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-11/2026-11-11.mp3",
+    "bytes": 12024438,
+    "seconds": 1489
+  },
+  {
     "date": "2026-11-10",
     "title": "AI Briefing — 10 November 2026",
     "description": "Deep dives: Anthropic releases new Mythos and Fable models amid RSI concerns · TPU 8tx and TPU 8i Max · Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines · Vulnerability that lets hackers SSH into Linux devices is under active exploitation. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-20/2026-08-20.mp3",
     "bytes": 12206431,
     "seconds": 1512
-  },
-  {
-    "date": "2026-08-19",
-    "title": "AI Briefing — 19 August 2026",
-    "description": "Deep dives: OpenAI lays out new security changes after its AI hacked Hugging Face · Cursor capitalizes on GitHub frustration, launches rival hosting platform · How Much Memory Does Your Agent Actually Need? · Microsoft Copilot reveals secret input that allowed it to be hacked. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-19/2026-08-19.mp3",
-    "bytes": 11335789,
-    "seconds": 1403
   }
 ]
