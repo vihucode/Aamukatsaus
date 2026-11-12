@@ -6,12 +6,22 @@
     <atom:link href="https://vihucode.github.io/Aamukatsaus/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Private, auto-generated 25-minute morning briefing on AI and tech: deep dives, quick hits and a research corner. Fresh every day before 06:00 Helsinki.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 08:21:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 09:02:58 +0000</lastBuildDate>
     <itunes:author>Aamukatsaus</itunes:author>
     <itunes:image href="https://vihucode.github.io/Aamukatsaus/cover.png"/>
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
+    <item>
+      <title>AI Briefing — 12 November 2026</title>
+      <description>Deep dives: The unfolding Jensen Huang scandal: a timeline · CoreWeave turns to customer prepayments, shorter contracts to fund AI growth · Google DeepMind just mathematically verified key parts of Signal · Anthropic's IPO roadshow video. Plus 7 quick hits.</description>
+      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-11-12.md</link>
+      <guid isPermaLink="false">2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 03:30:00 +0000</pubDate>
+      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-12/2026-11-12.mp3" length="11123253" type="audio/mpeg"/>
+      <itunes:duration>0:22:57</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>AI Briefing — 11 November 2026</title>
       <description>Deep dives: All 7 Anthropic founders will each cash out about $250M in IPO · BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model · Tracking Anthropic-discovered vulnerabilities · Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks. Plus 7 quick hits and the research corner.</description>
@@ -600,16 +610,6 @@
       <pubDate>Fri, 21 Aug 2026 03:30:00 +0000</pubDate>
       <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-21/2026-08-21.mp3" length="11194586" type="audio/mpeg"/>
       <itunes:duration>0:23:06</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>AI Briefing — 20 August 2026</title>
-      <description>Deep dives: Stripe didn’t really buy OpenRouter because of the ‘singularity’ · Offering Zero Data Retention for frontier models · OpenAI hit the brakes. Now what? · Ornith-1.5: From Self-Scaffolding to Self-Improvement. Plus 7 quick hits and the research corner.</description>
-      <link>https://vihucode.github.io/Aamukatsaus/shownotes/2026-08-20.md</link>
-      <guid isPermaLink="false">2026-08-20</guid>
-      <pubDate>Thu, 20 Aug 2026 03:30:00 +0000</pubDate>
-      <enclosure url="https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-20/2026-08-20.mp3" length="12206431" type="audio/mpeg"/>
-      <itunes:duration>0:25:12</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
