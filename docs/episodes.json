@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-13",
+    "title": "AI Briefing — 13 November 2026",
+    "description": "Deep dives: The unfolding Jensen Huang scandal: a timeline · Introducing Gemini 4 Hydrogen · Edge0-145B: Frontier AI Capabilities on Your Own Computer · FAA expands AI advice to manage air traffic congestion across entire US airspace. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-13/2026-11-13.mp3",
+    "bytes": 11379091,
+    "seconds": 1409
+  },
+  {
     "date": "2026-11-12",
     "title": "AI Briefing — 12 November 2026",
     "description": "Deep dives: The unfolding Jensen Huang scandal: a timeline · CoreWeave turns to customer prepayments, shorter contracts to fund AI growth · Google DeepMind just mathematically verified key parts of Signal · Anthropic's IPO roadshow video. Plus 7 quick hits.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-22/2026-08-22.mp3",
     "bytes": 13150918,
     "seconds": 1630
-  },
-  {
-    "date": "2026-08-21",
-    "title": "AI Briefing — 21 August 2026",
-    "description": "Deep dives: Malicious Rust crate Arrayref runs a build-time payload · OpenAI is gaining on Anthropic with business users, new data indicates · The August 17 outage, and the work ahead · Grok exfiltrates user data when malicious instructions are encrypted. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-21/2026-08-21.mp3",
-    "bytes": 11194586,
-    "seconds": 1386
   }
 ]
