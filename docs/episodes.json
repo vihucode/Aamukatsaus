@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-17",
+    "title": "AI Briefing — 17 November 2026",
+    "description": "Deep dives: California sues OpenAI over rogue AI hacking incidents · Cybersecurity AI startup Corma reaches $1B valuation in about 3 months · Windows 11 is collecting data on which coding agents and developer tools you use · US moves to cut China’s remote access to AI chips. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-17/2026-11-17.mp3",
+    "bytes": 12023183,
+    "seconds": 1489
+  },
+  {
     "date": "2026-11-16",
     "title": "AI Briefing — 16 November 2026",
     "description": "Deep dives: Universal XSS in uBlock Origin from website-driven element picker · AI agent startup LangChain hits $3B valuation · Congress wants to tighten export rules on AI chips after Nvidia spy scandal · llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-24/2026-08-24.mp3",
     "bytes": 11045225,
     "seconds": 1367
-  },
-  {
-    "date": "2026-08-23",
-    "title": "AI Briefing — 23 August 2026",
-    "description": "Deep dives: Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research · Frontier AI labs still won’t say how they’d contain a rogue model · OpenAI says California should strengthen its AI safety bill · Munder Difflin – Agent harness to run an office of your clones. Plus 7 quick hits.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-23/2026-08-23.mp3",
-    "bytes": 10927661,
-    "seconds": 1353
   }
 ]
