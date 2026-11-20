@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-20",
+    "title": "AI Briefing — 20 November 2026",
+    "description": "Deep dives: Anthropic hits Nasdaq exchanges at $111, 33% above IPO price · Claude solves two open problems in the physics of black holes · OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8) · Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-20/2026-11-20.mp3",
+    "bytes": 11902481,
+    "seconds": 1474
+  },
+  {
     "date": "2026-11-18",
     "title": "AI Briefing — 18 November 2026",
     "description": "Deep dives: Copilot is \"the new OS for work,\" and now Office runs inside of it · Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt · OpenAI sued by California after admitting to 80 loss-of-control incidents · Google's AI answers reducing search traffic by 40%. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-26/2026-08-26.mp3",
     "bytes": 10783531,
     "seconds": 1335
-  },
-  {
-    "date": "2026-08-25",
-    "title": "AI Briefing — 25 August 2026",
-    "description": "Deep dives: Nvidia senior manager linked to Supermicro scheme smuggling AI servers to China · Hugging Face reportedly in talks to be acquired for $13B · OpenAI is building AI agents for everything. Will everyone use them? · AI is hitting entry-level jobs hardest, Stanford study finds. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-25/2026-08-25.mp3",
-    "bytes": 11172831,
-    "seconds": 1383
   }
 ]
