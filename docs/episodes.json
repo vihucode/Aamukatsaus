@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-23",
+    "title": "AI Briefing — 23 November 2026",
+    "description": "Deep dives: How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO · OpenAI’s chief scientist has thoughts on how to limit AI development · Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced. · Localcode, open source agentic coding on your Mac with one command. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-23/2026-11-23.mp3",
+    "bytes": 11906037,
+    "seconds": 1475
+  },
+  {
     "date": "2026-11-20",
     "title": "AI Briefing — 20 November 2026",
     "description": "Deep dives: Anthropic hits Nasdaq exchanges at $111, 33% above IPO price · Claude solves two open problems in the physics of black holes · OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8) · Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-27/2026-08-27.mp3",
     "bytes": 13319105,
     "seconds": 1651
-  },
-  {
-    "date": "2026-08-26",
-    "title": "AI Briefing — 26 August 2026",
-    "description": "Deep dives: OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show · Claude Cowork finally remembers what you told the app in chat · Robotics startup Generalist reaches $3B valuation, sources say · Granite 4.2 LLMs: How They're Built. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-26/2026-08-26.mp3",
-    "bytes": 10783531,
-    "seconds": 1335
   }
 ]
