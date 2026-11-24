@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-24",
+    "title": "AI Briefing — 24 November 2026",
+    "description": "Deep dives: Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes · Data centers are getting their own natural gas power plants · OpenAI and Cisco introduce Shirudo · Finding faster quantum algorithms with agents and formal verification. Plus 7 quick hits and the research corner.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-24/2026-11-24.mp3",
+    "bytes": 11533263,
+    "seconds": 1428
+  },
+  {
     "date": "2026-11-23",
     "title": "AI Briefing — 23 November 2026",
     "description": "Deep dives: How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO · OpenAI’s chief scientist has thoughts on how to limit AI development · Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced. · Localcode, open source agentic coding on your Mac with one command. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-28/2026-08-28.mp3",
     "bytes": 11560248,
     "seconds": 1432
-  },
-  {
-    "date": "2026-08-27",
-    "title": "AI Briefing — 27 August 2026",
-    "description": "Deep dives: OpenAI’s rogue AI model incident was worse than we thought · Nvidia closes in on Hugging Face acquisition · Anthropic continues compute-gobbling streak in $45B deal with Nscale · CEO fired developers to make room for AI. Developers create open source AI CEO. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-08-27/2026-08-27.mp3",
-    "bytes": 13319105,
-    "seconds": 1651
   }
 ]
