@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-27",
+    "title": "AI Briefing — 27 November 2026",
+    "description": "Deep dives: Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email · AI made self-hosting fun again · Nvidia hits pause on chip shipments to Southeast Asia · The need for a formally verifiable mainstream programming language. Plus 7 quick hits.",
+    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-11-27/2026-11-27.mp3",
+    "bytes": 12209988,
+    "seconds": 1513
+  },
+  {
     "date": "2026-11-26",
     "title": "AI Briefing — 26 November 2026",
     "description": "Deep dives: Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening · Where scientists draw the line on AI agents · The FCC has authorized SpaceX to deploy 1 million satellites · Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server. Plus 7 quick hits and the research corner.",
@@ -470,13 +478,5 @@
     "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-02/2026-09-02.mp3",
     "bytes": 12340733,
     "seconds": 1529
-  },
-  {
-    "date": "2026-09-01",
-    "title": "AI Briefing — 1 September 2026",
-    "description": "Deep dives: DoltLite: A SQLite fork with Git-style version control, built with 2k agent PRs · The Hugging Face hack could indicate cultural issues at OpenAI · Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout · Apple caught off guard by AI demand for Mac Mini and Mac Studio. Plus 7 quick hits and the research corner.",
-    "mp3_url": "https://github.com/vihucode/Aamukatsaus/releases/download/ep-2026-09-01/2026-09-01.mp3",
-    "bytes": 12318349,
-    "seconds": 1526
   }
 ]
